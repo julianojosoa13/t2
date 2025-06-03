@@ -1,3 +1,4 @@
+import { Button } from "@/components/shared/Button";
 import React from "react";
 import { Text, Image, ScrollView, View, TouchableOpacity } from "react-native";
 import Animated, {
@@ -32,19 +33,25 @@ const Onboarding = () => {
       </View>
 
       <Animated.View
-        className="py-8"
+        className="py-8 px-4 gap-8"
         entering={FadeInDown.duration(300).delay(300)}
       >
-        <TouchableOpacity className="bg-primary mx-4 rounded-xl h-14 justify-center">
+        <Button>
           <Text className="text-center font-nunito-semibold text-lg">
             Ajouter un évènement
           </Text>
-        </TouchableOpacity>
-        <TouchableOpacity className="border mx-4 my-8 rounded-xl h-14 justify-center">
+        </Button>
+        <Button
+          style={{
+            backgroundColor: "transparent",
+            borderWidth: 1,
+            borderColor: "rgba(0,0,0,0.5)",
+          }}
+        >
           <Text className="text-center font-nunito-semibold text-lg">
             Voir une démo
           </Text>
-        </TouchableOpacity>
+        </Button>
       </Animated.View>
     </ScrollView>
   );
