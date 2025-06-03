@@ -1,12 +1,5 @@
 import { Header } from "@/components/shared/Header";
-import {
-  Image,
-  SafeAreaView,
-  ScrollView,
-  Text,
-  TextInput,
-  View,
-} from "react-native";
+import { Image, SafeAreaView, Text, TextInput, View } from "react-native";
 import {
   MaterialIcons,
   Entypo,

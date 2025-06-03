@@ -37,7 +37,7 @@ const Onboarding = () => {
         className="py-8 px-4 gap-8"
         entering={FadeInDown.duration(300).delay(300)}
       >
-        <Button onPress={() => router.navigate("/(root)/CreateEvent")}>
+        <Button onPress={() => router.navigate("/(root)/CreateEvent/Page1")}>
           <Text className="text-center font-nunito-semibold text-lg">
             Ajouter un évènement
           </Text>
