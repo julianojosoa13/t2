@@ -14,7 +14,11 @@ import {
   MaterialCommunityIcons,
 } from "@expo/vector-icons";
 import Ripple from "react-native-material-ripple";
-import Animated, { FadeInDown, FadeInUp } from "react-native-reanimated";
+import Animated, {
+  FadeInDown,
+  FadeInUp,
+  FadeOutDown,
+} from "react-native-reanimated";
 
 const bgColor = "#EFEFEF";
 const fgColor = "#828282";
@@ -32,6 +36,7 @@ const CreateEvent = () => {
       </Animated.View>
       <Animated.ScrollView
         entering={FadeInDown.duration(600)}
+        exiting={FadeOutDown.duration(600)}
         className="flex-1 bg-white rounded-t-3xl mt-2 pt-4 px-4"
         showsVerticalScrollIndicator={false}
         contentContainerClassName="flex flex-1"
@@ -187,7 +192,7 @@ const CreateEvent = () => {
           className="absolute bottom-0 -left-10 -z-10 w-full h-[200px]"
         />
         <Ripple
-          className={`bg-primary w-16 h-16 rounded-full items-center justify-center absolute bottom-0 right-0 mb-14 mr-5 overflow-hidden`}
+          className={`bg-primary w-16 h-16 rounded-full items-center justify-center absolute bottom-0 right-0 mb-14 mr-2 overflow-hidden`}
         >
           <Entypo name="chevron-thin-right" size={20} color={"#303338"} />
         </Ripple>
