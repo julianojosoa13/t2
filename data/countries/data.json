@@ -1,0 +1,2412 @@
+{
+    "AF": {
+        "name": "Afghanistan",
+        "dial_code": "+93",
+        "code": "AF",
+        "flagImage": "require('./4x3/af.svg')",
+        "locale": "ps_AF",
+        "currency": "AFN",
+        "currencyName": "Afghani",
+        "continent": "Asia"
+    },
+    "AX": {
+        "name": "Aland Islands",
+        "dial_code": "+358",
+        "code": "AX",
+        "flagImage": "require('./4x3/ax.svg')",
+        "locale": "sv",
+        "currency": "EUR",
+        "currencyName": "Euro",
+        "continent": "Europe"
+    },
+    "AL": {
+        "name": "Albania",
+        "dial_code": "+355",
+        "code": "AL",
+        "flagImage": "require('./4x3/al.svg')",
+        "locale": "sq_AL",
+        "currency": "ALL",
+        "currencyName": "Lek",
+        "continent": "Europe"
+    },
+    "DZ": {
+        "name": "Algeria",
+        "dial_code": "+213",
+        "code": "DZ",
+        "flagImage": "require('./4x3/dz.svg')",
+        "locale": "ar_DZ",
+        "currency": "DZD",
+        "currencyName": "Algerian Dinar",
+        "continent": "Africa"
+    },
+    "AS": {
+        "name": "AmericanSamoa",
+        "dial_code": "+1684",
+        "code": "AS",
+        "flagImage": "require('./4x3/as.svg')",
+        "locale": "en_AS",
+        "currency": "USD",
+        "currencyName": "US Dollar",
+        "continent": "Oceania"
+    },
+    "AD": {
+        "name": "Andorra",
+        "dial_code": "+376",
+        "code": "AD",
+        "flagImage": "require('./4x3/ad.svg')",
+        "locale": "ca",
+        "currency": "EUR",
+        "currencyName": "Euro",
+        "continent": "Europe"
+    },
+    "AO": {
+        "name": "Angola",
+        "dial_code": "+244",
+        "code": "AO",
+        "flagImage": "require('./4x3/ao.svg')",
+        "locale": "pt",
+        "currency": "AOA",
+        "currencyName": "Kwanza",
+        "continent": "Africa"
+    },
+    "AI": {
+        "name": "Anguilla",
+        "dial_code": "+1264",
+        "code": "AI",
+        "flagImage": "require('./4x3/ai.svg')",
+        "locale": "en",
+        "currency": "XCD",
+        "currencyName": "East Caribbean Dollar",
+        "continent": "Americas"
+    },
+    "AQ": {
+        "name": "Antarctica",
+        "dial_code": "+672",
+        "code": "AQ",
+        "flagImage": "require('./4x3/aq.svg')",
+        "locale": "en_US",
+        "currency": "USD",
+        "currencyName": "US Dollar",
+        "continent": "Antarctica"
+    },
+    "AG": {
+        "name": "Antigua and Barbuda",
+        "dial_code": "+1268",
+        "code": "AG",
+        "flagImage": "require('./4x3/ag.svg')",
+        "locale": "en",
+        "currency": "XCD",
+        "currencyName": "East Caribbean Dollar",
+        "continent": "Americas"
+    },
+    "AR": {
+        "name": "Argentina",
+        "dial_code": "+54",
+        "code": "AR",
+        "flagImage": "require('./4x3/ar.svg')",
+        "locale": "es_AR",
+        "currency": "ARS",
+        "currencyName": "Argentine Peso",
+        "continent": "Americas"
+    },
+    "AM": {
+        "name": "Armenia",
+        "dial_code": "+374",
+        "code": "AM",
+        "flagImage": "require('./4x3/am.svg')",
+        "locale": "hy_AM",
+        "currency": "AMD",
+        "currencyName": "Armenian Dram",
+        "continent": "Asia"
+    },
+    "AW": {
+        "name": "Aruba",
+        "dial_code": "+297",
+        "code": "AW",
+        "flagImage": "require('./4x3/aw.svg')",
+        "locale": "nl",
+        "currency": "AWG",
+        "currencyName": "Aruban Florin",
+        "continent": "Americas"
+    },
+    "AU": {
+        "name": "Australia",
+        "dial_code": "+61",
+        "code": "AU",
+        "flagImage": "require('./4x3/au.svg')",
+        "locale": "en_AU",
+        "currency": "AUD",
+        "currencyName": "Australian Dollar",
+        "continent": "Oceania"
+    },
+    "AT": {
+        "name": "Austria",
+        "dial_code": "+43",
+        "code": "AT",
+        "flagImage": "require('./4x3/at.svg')",
+        "locale": "de_AT",
+        "currency": "EUR",
+        "currencyName": "Euro",
+        "continent": "Europe"
+    },
+    "AZ": {
+        "name": "Azerbaijan",
+        "dial_code": "+994",
+        "code": "AZ",
+        "flagImage": "require('./4x3/az.svg')",
+        "locale": "az_Cyrl_AZ",
+        "currency": "AZN",
+        "currencyName": "Azerbaijan Manat",
+        "continent": "Asia"
+    },
+    "BS": {
+        "name": "Bahamas",
+        "dial_code": "+1242",
+        "code": "BS",
+        "flagImage": "require('./4x3/bs.svg')",
+        "locale": "en",
+        "currency": "BSD",
+        "currencyName": "Bahamian Dollar",
+        "continent": "Americas"
+    },
+    "BH": {
+        "name": "Bahrain",
+        "dial_code": "+973",
+        "code": "BH",
+        "flagImage": "require('./4x3/bh.svg')",
+        "locale": "ar_BH",
+        "currency": "BHD",
+        "currencyName": "Bahraini Dinar",
+        "continent": "Asia"
+    },
+    "BD": {
+        "name": "Bangladesh",
+        "dial_code": "+880",
+        "code": "BD",
+        "flagImage": "require('./4x3/bd.svg')",
+        "locale": "bn_BD",
+        "currency": "BDT",
+        "currencyName": "Taka",
+        "continent": "Asia"
+    },
+    "BB": {
+        "name": "Barbados",
+        "dial_code": "+1246",
+        "code": "BB",
+        "flagImage": "require('./4x3/bb.svg')",
+        "locale": "en",
+        "currency": "BBD",
+        "currencyName": "Barbados Dollar",
+        "continent": "Americas"
+    },
+    "BY": {
+        "name": "Belarus",
+        "dial_code": "+375",
+        "code": "BY",
+        "flagImage": "require('./4x3/by.svg')",
+        "locale": "be_BY",
+        "currency": "BYN",
+        "currencyName": "Belarusian Ruble",
+        "continent": "Europe"
+    },
+    "BE": {
+        "name": "Belgium",
+        "dial_code": "+32",
+        "code": "BE",
+        "flagImage": "require('./4x3/be.svg')",
+        "locale": "nl_BE",
+        "currency": "EUR",
+        "currencyName": "Euro",
+        "continent": "Europe"
+    },
+    "BZ": {
+        "name": "Belize",
+        "dial_code": "+501",
+        "code": "BZ",
+        "flagImage": "require('./4x3/bz.svg')",
+        "locale": "en_BZ",
+        "currency": "BZD",
+        "currencyName": "Belize Dollar",
+        "continent": "Americas"
+    },
+    "BJ": {
+        "name": "Benin",
+        "dial_code": "+229",
+        "code": "BJ",
+        "flagImage": "require('./4x3/bj.svg')",
+        "locale": "fr_BJ",
+        "currency": "XOF",
+        "currencyName": "CFA Franc BCEAO",
+        "continent": "Africa"
+    },
+    "BM": {
+        "name": "Bermuda",
+        "dial_code": "+1441",
+        "code": "BM",
+        "flagImage": "require('./4x3/bm.svg')",
+        "locale": "en",
+        "currency": "BMD",
+        "currencyName": "Bermudian Dollar",
+        "continent": "Americas"
+    },
+    "BT": {
+        "name": "Bhutan",
+        "dial_code": "+975",
+        "code": "BT",
+        "flagImage": "require('./4x3/bt.svg')",
+        "locale": "dz",
+        "currency": "BTN",
+        "currencyName": "Ngultrum",
+        "continent": "Asia"
+    },
+    "BO": {
+        "name": "Bolivia, Plurinational State of",
+        "dial_code": "+591",
+        "code": "BO",
+        "flagImage": "require('./4x3/bo.svg')",
+        "locale": "es_BO",
+        "currency": "BOB",
+        "currencyName": "Bolivia",
+        "continent": "Americas"
+    },
+    "BA": {
+        "name": "Bosnia and Herzegovina",
+        "dial_code": "+387",
+        "code": "BA",
+        "flagImage": "require('./4x3/ba.svg')",
+        "locale": "bs_BA",
+        "currency": "BAM",
+        "currencyName": "Convertible Mark",
+        "continent": "Europe"
+    },
+    "BW": {
+        "name": "Botswana",
+        "dial_code": "+267",
+        "code": "BW",
+        "flagImage": "require('./4x3/bw.svg')",
+        "locale": "en_BW",
+        "currency": "BWP",
+        "currencyName": "Pula",
+        "continent": "Africa"
+    },
+    "BR": {
+        "name": "Brazil",
+        "dial_code": "+55",
+        "code": "BR",
+        "flagImage": "require('./4x3/br.svg')",
+        "locale": "pt_BR",
+        "currency": "BRL",
+        "currencyName": "Brazilian Real",
+        "continent": "Americas"
+    },
+    "IO": {
+        "name": "British Indian Ocean Territory",
+        "dial_code": "+246",
+        "code": "IO",
+        "flagImage": "require('./4x3/io.svg')",
+        "locale": "en",
+        "currency": "USD",
+        "currencyName": "US Dollar",
+        "continent": "Asia"
+    },
+    "BN": {
+        "name": "Brunei Darussalam",
+        "dial_code": "+673",
+        "code": "BN",
+        "flagImage": "require('./4x3/bn.svg')",
+        "locale": "ms_BN",
+        "currency": "BND",
+        "currencyName": "Brunei Dollar",
+        "continent": "Asia"
+    },
+    "BG": {
+        "name": "Bulgaria",
+        "dial_code": "+359",
+        "code": "BG",
+        "flagImage": "require('./4x3/bg.svg')",
+        "locale": "bg_BG",
+        "currency": "BGN",
+        "currencyName": "Bulgarian Lev",
+        "continent": "Europe"
+    },
+    "BF": {
+        "name": "Burkina Faso",
+        "dial_code": "+226",
+        "code": "BF",
+        "flagImage": "require('./4x3/bf.svg')",
+        "locale": "fr_BF",
+        "currency": "XOF",
+        "currencyName": "CFA Franc BCEAO",
+        "continent": "Africa"
+    },
+    "BI": {
+        "name": "Burundi",
+        "dial_code": "+257",
+        "code": "BI",
+        "flagImage": "require('./4x3/bi.svg')",
+        "locale": "fr_BI",
+        "currency": "BIF",
+        "currencyName": "Burundi Franc",
+        "continent": "Africa"
+    },
+    "KH": {
+        "name": "Cambodia",
+        "dial_code": "+855",
+        "code": "KH",
+        "flagImage": "require('./4x3/kh.svg')",
+        "locale": "km_KH",
+        "currency": "KHR",
+        "currencyName": "Riel",
+        "continent": "Asia"
+    },
+    "CM": {
+        "name": "Cameroon",
+        "dial_code": "+237",
+        "code": "CM",
+        "flagImage": "require('./4x3/cm.svg')",
+        "locale": "fr_CM",
+        "currency": "XAF",
+        "currencyName": "CFA Franc BEAC",
+        "continent": "Africa"
+    },
+    "CA": {
+        "name": "Canada",
+        "dial_code": "+1",
+        "code": "CA",
+        "flagImage": "require('./4x3/ca.svg')",
+        "locale": "en_CA",
+        "currency": "CAD",
+        "currencyName": "Canadian Dollar",
+        "continent": "Americas"
+    },
+    "CV": {
+        "name": "Cape Verde",
+        "dial_code": "+238",
+        "code": "CV",
+        "flagImage": "require('./4x3/cv.svg')",
+        "locale": "kea_CV",
+        "currency": "CVE",
+        "currencyName": "Cabo Verde Escudo",
+        "continent": "Africa"
+    },
+    "KY": {
+        "name": "Cayman Islands",
+        "dial_code": "+ 345",
+        "code": "KY",
+        "flagImage": "require('./4x3/ky.svg')",
+        "locale": "en",
+        "currency": "KYD",
+        "currencyName": "Cayman Islands Dollar",
+        "continent": "Americas"
+    },
+    "CF": {
+        "name": "Central African Republic",
+        "dial_code": "+236",
+        "code": "CF",
+        "flagImage": "require('./4x3/cf.svg')",
+        "locale": "fr_CF",
+        "currency": "XAF",
+        "currencyName": "CFA Franc BEAC",
+        "continent": "Africa"
+    },
+    "TD": {
+        "name": "Chad",
+        "dial_code": "+235",
+        "code": "TD",
+        "flagImage": "require('./4x3/td.svg')",
+        "locale": "fr_TD",
+        "currency": "XAF",
+        "currencyName": "CFA Franc BEAC",
+        "continent": "Africa"
+    },
+    "CL": {
+        "name": "Chile",
+        "dial_code": "+56",
+        "code": "CL",
+        "flagImage": "require('./4x3/cl.svg')",
+        "locale": "es_CL",
+        "currency": "CLP",
+        "currencyName": "Chilean Peso",
+        "continent": "Americas"
+    },
+    "CN": {
+        "name": "China",
+        "dial_code": "+86",
+        "code": "CN",
+        "flagImage": "require('./4x3/cn.svg')",
+        "locale": "zh_CN",
+        "currency": "CNY",
+        "currencyName": "Yuan Renminbi",
+        "continent": "Asia"
+    },
+    "CX": {
+        "name": "Christmas Island",
+        "dial_code": "+61",
+        "code": "CX",
+        "flagImage": "require('./4x3/cx.svg')",
+        "locale": "en",
+        "currency": "AUD",
+        "currencyName": "Australian Dollar",
+        "continent": "Asia"
+    },
+    "CC": {
+        "name": "Cocos (Keeling) Islands",
+        "dial_code": "+61",
+        "code": "CC",
+        "flagImage": "require('./4x3/cc.svg')",
+        "locale": "en",
+        "currency": "AUD",
+        "currencyName": "Australian Dollar",
+        "continent": "Asia"
+    },
+    "CO": {
+        "name": "Colombia",
+        "dial_code": "+57",
+        "code": "CO",
+        "flagImage": "require('./4x3/co.svg')",
+        "locale": "es_CO",
+        "currency": "COP",
+        "currencyName": "Colombian Peso",
+        "continent": "Americas"
+    },
+    "KM": {
+        "name": "Comoros",
+        "dial_code": "+269",
+        "code": "KM",
+        "flagImage": "require('./4x3/km.svg')",
+        "locale": "fr_KM",
+        "currency": "KMF",
+        "currencyName": "Comorian Franc ",
+        "continent": "Africa"
+    },
+    "CG": {
+        "name": "Congo",
+        "dial_code": "+242",
+        "code": "CG",
+        "flagImage": "require('./4x3/cg.svg')",
+        "locale": "fr_CG",
+        "currency": "XAF",
+        "currencyName": "CFA Franc BEAC",
+        "continent": "Africa"
+    },
+    "CD": {
+        "name": "Congo, The Democratic Republic of the Congo",
+        "dial_code": "+243",
+        "code": "CD",
+        "flagImage": "require('./4x3/cd.svg')",
+        "locale": "fr_CD",
+        "currency": "CDF",
+        "currencyName": "Congolese Franc",
+        "continent": "Africa"
+    },
+    "CK": {
+        "name": "Cook Islands",
+        "dial_code": "+682",
+        "code": "CK",
+        "flagImage": "require('./4x3/ck.svg')",
+        "locale": "en",
+        "currency": "NZD",
+        "currencyName": "New Zealand Dollar",
+        "continent": "Oceania"
+    },
+    "CR": {
+        "name": "Costa Rica",
+        "dial_code": "+506",
+        "code": "CR",
+        "flagImage": "require('./4x3/cr.svg')",
+        "locale": "es_CR",
+        "currency": "CRC",
+        "currencyName": "Costa Rican Colon",
+        "continent": "Americas"
+    },
+    "CI": {
+        "name": "Cote d'Ivoire",
+        "dial_code": "+225",
+        "code": "CI",
+        "flagImage": "require('./4x3/ci.svg')",
+        "locale": "fr_CI",
+        "currency": "CZK",
+        "currencyName": "Czech Koruna",
+        "continent": "Africa"
+    },
+    "HR": {
+        "name": "Croatia",
+        "dial_code": "+385",
+        "code": "HR",
+        "flagImage": "require('./4x3/hr.svg')",
+        "locale": "hr_HR",
+        "currency": "EUR",
+        "currencyName": "Euro",
+        "continent": "Europe"
+    },
+    "CU": {
+        "name": "Cuba",
+        "dial_code": "+53",
+        "code": "CU",
+        "flagImage": "require('./4x3/cu.svg')",
+        "locale": "es",
+        "currency": "CUC",
+        "currencyName": "Peso Convertible",
+        "continent": "Americas"
+    },
+    "CY": {
+        "name": "Cyprus",
+        "dial_code": "+357",
+        "code": "CY",
+        "flagImage": "require('./4x3/cy.svg')",
+        "locale": "el_CY",
+        "currency": "EUR",
+        "currencyName": "Euro",
+        "continent": "Asia"
+    },
+    "CZ": {
+        "name": "Czech Republic",
+        "dial_code": "+420",
+        "code": "CZ",
+        "flagImage": "require('./4x3/cz.svg')",
+        "locale": "cs_CZ",
+        "currency": "CZK",
+        "currencyName": "Czech Koruna",
+        "continent": "Europe"
+    },
+    "DK": {
+        "name": "Denmark",
+        "dial_code": "+45",
+        "code": "DK",
+        "flagImage": "require('./4x3/dk.svg')",
+        "locale": "da_DK",
+        "currency": "DKK",
+        "currencyName": "Danish Krone",
+        "continent": "Europe"
+    },
+    "DJ": {
+        "name": "Djibouti",
+        "dial_code": "+253",
+        "code": "DJ",
+        "flagImage": "require('./4x3/dj.svg')",
+        "locale": "fr_DJ",
+        "currency": "DJF",
+        "currencyName": "Djibouti Franc",
+        "continent": "Africa"
+    },
+    "DM": {
+        "name": "Dominica",
+        "dial_code": "+1767",
+        "code": "DM",
+        "flagImage": "require('./4x3/dm.svg')",
+        "locale": "en",
+        "currency": "XCD",
+        "currencyName": "East Caribbean Dollar",
+        "continent": "Americas"
+    },
+    "DO": {
+        "name": "Dominican Republic",
+        "dial_code": "+1849",
+        "code": "DO",
+        "flagImage": "require('./4x3/do.svg')",
+        "locale": "es_DO",
+        "currency": "DOP",
+        "currencyName": "Dominican Peso",
+        "continent": "Americas"
+    },
+    "EC": {
+        "name": "Ecuador",
+        "dial_code": "+593",
+        "code": "EC",
+        "flagImage": "require('./4x3/ec.svg')",
+        "locale": "es_EC",
+        "currency": "USD",
+        "currencyName": "US Dollar",
+        "continent": "Americas"
+    },
+    "EG": {
+        "name": "Egypt",
+        "dial_code": "+20",
+        "code": "EG",
+        "flagImage": "require('./4x3/eg.svg')",
+        "locale": "ar_EG",
+        "currency": "EGP",
+        "currencyName": "Egyptian Pound",
+        "continent": "Africa"
+    },
+    "SV": {
+        "name": "El Salvador",
+        "dial_code": "+503",
+        "code": "SV",
+        "flagImage": "require('./4x3/sv.svg')",
+        "locale": "es_SV",
+        "currency": "USD",
+        "currencyName": "US Dollar",
+        "continent": "Americas"
+    },
+    "GQ": {
+        "name": "Equatorial Guinea",
+        "dial_code": "+240",
+        "code": "GQ",
+        "flagImage": "require('./4x3/gq.svg')",
+        "locale": "fr_GQ",
+        "currency": "XAF",
+        "currencyName": "CFA Franc BEAC",
+        "continent": "Africa"
+    },
+    "ER": {
+        "name": "Eritrea",
+        "dial_code": "+291",
+        "code": "ER",
+        "flagImage": "require('./4x3/er.svg')",
+        "locale": "ti_ER",
+        "currency": "ERN",
+        "currencyName": "Nakfa",
+        "continent": "Africa"
+    },
+    "EE": {
+        "name": "Estonia",
+        "dial_code": "+372",
+        "code": "EE",
+        "flagImage": "require('./4x3/ee.svg')",
+        "locale": "et_EE",
+        "currency": "EUR",
+        "currencyName": "Euro",
+        "continent": "Europe"
+    },
+    "ET": {
+        "name": "Ethiopia",
+        "dial_code": "+251",
+        "code": "ET",
+        "flagImage": "require('./4x3/et.svg')",
+        "locale": "am_ET",
+        "currency": "ETB",
+        "currencyName": "Ethiopian Birr",
+        "continent": "Africa"
+    },
+    "FK": {
+        "name": "Falkland Islands (Malvinas)",
+        "dial_code": "+500",
+        "code": "FK",
+        "flagImage": "require('./4x3/fk.svg')",
+        "locale": "en",
+        "currency": "DKK",
+        "currencyName": "Danish Krone",
+        "continent": "Americas"
+    },
+    "FO": {
+        "name": "Faroe Islands",
+        "dial_code": "+298",
+        "code": "FO",
+        "flagImage": "require('./4x3/fo.svg')",
+        "locale": "fo_FO",
+        "currency": "DKK",
+        "currencyName": "Danish Krone",
+        "continent": "Europe"
+    },
+    "FJ": {
+        "name": "Fiji",
+        "dial_code": "+679",
+        "code": "FJ",
+        "flagImage": "require('./4x3/fj.svg')",
+        "locale": "en",
+        "currency": "FJD",
+        "currencyName": "Fiji Dollar",
+        "continent": "Oceania"
+    },
+    "FI": {
+        "name": "Finland",
+        "dial_code": "+358",
+        "code": "FI",
+        "flagImage": "require('./4x3/fi.svg')",
+        "locale": "fi_FI",
+        "currency": "EUR",
+        "currencyName": "Euro",
+        "continent": "Europe"
+    },
+    "FR": {
+        "name": "France",
+        "dial_code": "+33",
+        "code": "FR",
+        "flagImage": "require('./4x3/fr.svg')",
+        "locale": "fr_FR",
+        "currency": "EUR",
+        "currencyName": "Euro",
+        "continent": "Europe"
+    },
+    "GF": {
+        "name": "French Guiana",
+        "dial_code": "+594",
+        "code": "GF",
+        "flagImage": "require('./4x3/gf.svg')",
+        "locale": "fr",
+        "currency": "EUR",
+        "currencyName": "Euro",
+        "continent": "Americas"
+    },
+    "PF": {
+        "name": "French Polynesia",
+        "dial_code": "+689",
+        "code": "PF",
+        "flagImage": "require('./4x3/pf.svg')",
+        "locale": "fr",
+        "currency": "XPF",
+        "currencyName": "CFP Franc",
+        "continent": "Oceania"
+    },
+    "GA": {
+        "name": "Gabon",
+        "dial_code": "+241",
+        "code": "GA",
+        "flagImage": "require('./4x3/ga.svg')",
+        "locale": "fr_GA",
+        "currency": "XAF",
+        "currencyName": "CFA Franc BEAC",
+        "continent": "Africa"
+    },
+    "GM": {
+        "name": "Gambia",
+        "dial_code": "+220",
+        "code": "GM",
+        "flagImage": "require('./4x3/gm.svg')",
+        "locale": "en",
+        "currency": "GMD",
+        "currencyName": "Dalasi",
+        "continent": "Africa"
+    },
+    "GE": {
+        "name": "Georgia",
+        "dial_code": "+995",
+        "code": "GE",
+        "flagImage": "require('./4x3/ge.svg')",
+        "locale": "ka_GE",
+        "currency": "GEL",
+        "currencyName": "Lari",
+        "continent": "Asia"
+    },
+    "DE": {
+        "name": "Germany",
+        "dial_code": "+49",
+        "code": "DE",
+        "flagImage": "require('./4x3/de.svg')",
+        "locale": "de_DE",
+        "currency": "EUR",
+        "currencyName": "Euro",
+        "continent": "Europe"
+    },
+    "GH": {
+        "name": "Ghana",
+        "dial_code": "+233",
+        "code": "GH",
+        "flagImage": "require('./4x3/gh.svg')",
+        "locale": "ak_GH",
+        "currency": "GHS",
+        "currencyName": "Ghana Cedi",
+        "continent": "Africa"
+    },
+    "GI": {
+        "name": "Gibraltar",
+        "dial_code": "+350",
+        "code": "GI",
+        "flagImage": "require('./4x3/gi.svg')",
+        "locale": "en",
+        "currency": "GIP",
+        "currencyName": "Gibraltar Pound",
+        "continent": "Europe"
+    },
+    "GR": {
+        "name": "Greece",
+        "dial_code": "+30",
+        "code": "GR",
+        "flagImage": "require('./4x3/gr.svg')",
+        "locale": "el_GR",
+        "currency": "EUR",
+        "currencyName": "Euro",
+        "continent": "Europe"
+    },
+    "GL": {
+        "name": "Greenland",
+        "dial_code": "+299",
+        "code": "GL",
+        "flagImage": "require('./4x3/gl.svg')",
+        "locale": "kl_GL",
+        "currency": "DKK",
+        "currencyName": "Danish Krone",
+        "continent": "Americas"
+    },
+    "GD": {
+        "name": "Grenada",
+        "dial_code": "+1473",
+        "code": "GD",
+        "flagImage": "require('./4x3/gd.svg')",
+        "locale": "en",
+        "currency": "XCD",
+        "currencyName": "East Caribbean Dollar",
+        "continent": "Americas"
+    },
+    "GP": {
+        "name": "Guadeloupe",
+        "dial_code": "+590",
+        "code": "GP",
+        "flagImage": "require('./4x3/gp.svg')",
+        "locale": "fr_GP",
+        "currency": "EUR",
+        "currencyName": "Euro",
+        "continent": "Americas"
+    },
+    "GU": {
+        "name": "Guam",
+        "dial_code": "+1671",
+        "code": "GU",
+        "flagImage": "require('./4x3/gu.svg')",
+        "locale": "en_GU",
+        "currency": "USD",
+        "currencyName": "US Dollar",
+        "continent": "Oceania"
+    },
+    "GT": {
+        "name": "Guatemala",
+        "dial_code": "+502",
+        "code": "GT",
+        "flagImage": "require('./4x3/gt.svg')",
+        "locale": "es_GT",
+        "currency": "GTQ",
+        "currencyName": "Quetzal",
+        "continent": "Americas"
+    },
+    "GG": {
+        "name": "Guernsey",
+        "dial_code": "+44",
+        "code": "GG",
+        "flagImage": "require('./4x3/gg.svg')",
+        "locale": "en",
+        "currency": "GBP",
+        "currencyName": "Pound Sterling",
+        "continent": "Europe"
+    },
+    "GN": {
+        "name": "Guinea",
+        "dial_code": "+224",
+        "code": "GN",
+        "flagImage": "require('./4x3/gn.svg')",
+        "locale": "fr_GN",
+        "currency": "GNF",
+        "currencyName": "Guinean Franc",
+        "continent": "Africa"
+    },
+    "GW": {
+        "name": "Guinea-Bissau",
+        "dial_code": "+245",
+        "code": "GW",
+        "flagImage": "require('./4x3/gw.svg')",
+        "locale": "pt_GW",
+        "currency": "XOF",
+        "currencyName": "CFA Franc BCEAO",
+        "continent": "Africa"
+    },
+    "GY": {
+        "name": "Guyana",
+        "dial_code": "+595",
+        "code": "GY",
+        "flagImage": "require('./4x3/gy.svg')",
+        "locale": "en",
+        "currency": "GYD",
+        "currencyName": "Guyana Dollar",
+        "continent": "Americas"
+    },
+    "HT": {
+        "name": "Haiti",
+        "dial_code": "+509",
+        "code": "HT",
+        "flagImage": "require('./4x3/ht.svg')",
+        "locale": "fr",
+        "currency": "USD",
+        "currencyName": "US Dollar",
+        "continent": "Americas"
+    },
+    "VA": {
+        "name": "Holy See (Vatican City State)",
+        "dial_code": "+379",
+        "code": "VA",
+        "flagImage": "require('./4x3/va.svg')",
+        "locale": "it",
+        "currency": "EUR",
+        "currencyName": "Euro",
+        "continent": "Europe"
+    },
+    "HN": {
+        "name": "Honduras",
+        "dial_code": "+504",
+        "code": "HN",
+        "flagImage": "require('./4x3/hn.svg')",
+        "locale": "es_HN",
+        "currency": "HNL",
+        "currencyName": "Lempira",
+        "continent": "Americas"
+    },
+    "HK": {
+        "name": "Hong Kong",
+        "dial_code": "+852",
+        "code": "HK",
+        "flagImage": "require('./4x3/hk.svg')",
+        "locale": "en_HK",
+        "currency": "HKD",
+        "currencyName": "Hong Kong Dollar",
+        "continent": "Asia"
+    },
+    "HU": {
+        "name": "Hungary",
+        "dial_code": "+36",
+        "code": "HU",
+        "flagImage": "require('./4x3/hu.svg')",
+        "locale": "hu_HU",
+        "currency": "HUF",
+        "currencyName": "Forint",
+        "continent": "Europe"
+    },
+    "IS": {
+        "name": "Iceland",
+        "dial_code": "+354",
+        "code": "IS",
+        "flagImage": "require('./4x3/is.svg')",
+        "locale": "is_IS",
+        "currency": "ISK",
+        "currencyName": "Iceland Krona",
+        "continent": "Europe"
+    },
+    "IN": {
+        "name": "India",
+        "dial_code": "+91",
+        "code": "IN",
+        "flagImage": "require('./4x3/in.svg')",
+        "locale": "hi_IN",
+        "currency": "INR",
+        "currencyName": "Indian Rupee",
+        "continent": "Asia"
+    },
+    "ID": {
+        "name": "Indonesia",
+        "dial_code": "+62",
+        "code": "ID",
+        "flagImage": "require('./4x3/id.svg')",
+        "locale": "id_ID",
+        "currency": "IDR",
+        "currencyName": "Rupiah",
+        "continent": "Asia"
+    },
+    "IR": {
+        "name": "Iran, Islamic Republic of Persian Gulf",
+        "dial_code": "+98",
+        "code": "IR",
+        "flagImage": "require('./4x3/ir.svg')",
+        "locale": "fa_IR",
+        "currency": "XDR",
+        "currencyName": "SDR (Special Drawing Right)",
+        "continent": "Asia"
+    },
+    "IQ": {
+        "name": "Iraq",
+        "dial_code": "+964",
+        "code": "IQ",
+        "flagImage": "require('./4x3/iq.svg')",
+        "locale": "ar_IQ",
+        "currency": "IQD",
+        "currencyName": "Iraqi Dinar",
+        "continent": "Asia"
+    },
+    "IE": {
+        "name": "Ireland",
+        "dial_code": "+353",
+        "code": "IE",
+        "flagImage": "require('./4x3/ie.svg')",
+        "locale": "en_IE",
+        "currency": "EUR",
+        "currencyName": "Euro",
+        "continent": "Europe"
+    },
+    "IM": {
+        "name": "Isle of Man",
+        "dial_code": "+44",
+        "code": "IM",
+        "flagImage": "require('./4x3/im.svg')",
+        "locale": "en",
+        "currency": "GBP",
+        "currencyName": "Pound Sterling",
+        "continent": "Europe"
+    },
+    "IL": {
+        "name": "Israel",
+        "dial_code": "+972",
+        "code": "IL",
+        "flagImage": "require('./4x3/il.svg')",
+        "locale": "he_IL",
+        "currency": "ILS",
+        "currencyName": "New Israeli Sheqel",
+        "continent": "Asia"
+    },
+    "IT": {
+        "name": "Italy",
+        "dial_code": "+39",
+        "code": "IT",
+        "flagImage": "require('./4x3/it.svg')",
+        "locale": "it_IT",
+        "currency": "EUR",
+        "currencyName": "Euro",
+        "continent": "Europe"
+    },
+    "JM": {
+        "name": "Jamaica",
+        "dial_code": "+1876",
+        "code": "JM",
+        "flagImage": "require('./4x3/jm.svg')",
+        "locale": "en_JM",
+        "currency": "JMD",
+        "currencyName": "Jamaican Dollar",
+        "continent": "Americas"
+    },
+    "JP": {
+        "name": "Japan",
+        "dial_code": "+81",
+        "code": "JP",
+        "flagImage": "require('./4x3/jp.svg')",
+        "locale": "ja_JP",
+        "currency": "JPY",
+        "currencyName": "Yen",
+        "continent": "Asia"
+    },
+    "JE": {
+        "name": "Jersey",
+        "dial_code": "+44",
+        "code": "JE",
+        "flagImage": "require('./4x3/je.svg')",
+        "locale": "en",
+        "currency": "GBP",
+        "currencyName": "Pound Sterling",
+        "continent": "Europe"
+    },
+    "JO": {
+        "name": "Jordan",
+        "dial_code": "+962",
+        "code": "JO",
+        "flagImage": "require('./4x3/jo.svg')",
+        "locale": "ar_JO",
+        "currency": "JOD",
+        "currencyName": "Jordanian Dinar",
+        "continent": "Asia"
+    },
+    "KZ": {
+        "name": "Kazakhstan",
+        "dial_code": "+77",
+        "code": "KZ",
+        "flagImage": "require('./4x3/kz.svg')",
+        "locale": "kk_Cyrl_KZ",
+        "currency": "KZT",
+        "currencyName": "Tenge",
+        "continent": "Asia"
+    },
+    "KE": {
+        "name": "Kenya",
+        "dial_code": "+254",
+        "code": "KE",
+        "flagImage": "require('./4x3/ke.svg')",
+        "locale": "ebu_KE",
+        "currency": "KES",
+        "currencyName": "Kenyan Shilling",
+        "continent": "Africa"
+    },
+    "KI": {
+        "name": "Kiribati",
+        "dial_code": "+686",
+        "code": "KI",
+        "flagImage": "require('./4x3/ki.svg')",
+        "locale": "en",
+        "currency": "AUD",
+        "currencyName": "Australian Dollar",
+        "continent": "Oceania"
+    },
+    "KP": {
+        "name": "Korea, Democratic People's Republic of Korea",
+        "dial_code": "+850",
+        "code": "KP",
+        "flagImage": "require('./4x3/kp.svg')",
+        "locale": "ko",
+        "currency": "KPW",
+        "currencyName": "North Korean Won",
+        "continent": "Asia"
+    },
+    "KR": {
+        "name": "Korea, Republic of South Korea",
+        "dial_code": "+82",
+        "code": "KR",
+        "flagImage": "require('./4x3/kr.svg')",
+        "locale": "ko_KR",
+        "currency": "KRW",
+        "currencyName": "Won",
+        "continent": "Asia"
+    },
+    "KW": {
+        "name": "Kuwait",
+        "dial_code": "+965",
+        "code": "KW",
+        "flagImage": "require('./4x3/kw.svg')",
+        "locale": "ar_KW",
+        "currency": "KWD",
+        "currencyName": "Kuwaiti Dinar",
+        "continent": "Asia"
+    },
+    "KG": {
+        "name": "Kyrgyzstan",
+        "dial_code": "+996",
+        "code": "KG",
+        "flagImage": "require('./4x3/kg.svg')",
+        "locale": "ky",
+        "currency": "KGS",
+        "currencyName": "Som",
+        "continent": "Asia"
+    },
+    "LA": {
+        "name": "Laos",
+        "dial_code": "+856",
+        "code": "LA",
+        "flagImage": "require('./4x3/la.svg')",
+        "locale": "lo",
+        "currency": "LAK",
+        "currencyName": "Lao Kip",
+        "continent": "Asia"
+    },
+    "LV": {
+        "name": "Latvia",
+        "dial_code": "+371",
+        "code": "LV",
+        "flagImage": "require('./4x3/lv.svg')",
+        "locale": "lv_LV",
+        "currency": "EUR",
+        "currencyName": "Euro",
+        "continent": "Europe"
+    },
+    "LB": {
+        "name": "Lebanon",
+        "dial_code": "+961",
+        "code": "LB",
+        "flagImage": "require('./4x3/lb.svg')",
+        "locale": "ar_LB",
+        "currency": "LBP",
+        "currencyName": "Lebanese Pound",
+        "continent": "Asia"
+    },
+    "LS": {
+        "name": "Lesotho",
+        "dial_code": "+266",
+        "code": "LS",
+        "flagImage": "require('./4x3/ls.svg')",
+        "locale": "en",
+        "currency": "ZAR",
+        "currencyName": "Rand",
+        "continent": "Africa"
+    },
+    "LR": {
+        "name": "Liberia",
+        "dial_code": "+231",
+        "code": "LR",
+        "flagImage": "require('./4x3/lr.svg')",
+        "locale": "en",
+        "currency": "LRD",
+        "currencyName": "Liberian Dollar",
+        "continent": "Africa"
+    },
+    "LY": {
+        "name": "Libyan Arab Jamahiriya",
+        "dial_code": "+218",
+        "code": "LY",
+        "flagImage": "require('./4x3/ly.svg')",
+        "locale": "ar_LY",
+        "currency": "LYD",
+        "currencyName": "Libyan Dinar",
+        "continent": "Africa"
+    },
+    "LI": {
+        "name": "Liechtenstein",
+        "dial_code": "+423",
+        "code": "LI",
+        "flagImage": "require('./4x3/li.svg')",
+        "locale": "de_LI",
+        "currency": "CHF",
+        "currencyName": "Swiss Franc",
+        "continent": "Europe"
+    },
+    "LT": {
+        "name": "Lithuania",
+        "dial_code": "+370",
+        "code": "LT",
+        "flagImage": "require('./4x3/lt.svg')",
+        "locale": "lt_LT",
+        "currency": "EUR",
+        "currencyName": "Euro",
+        "continent": "Europe"
+    },
+    "LU": {
+        "name": "Luxembourg",
+        "dial_code": "+352",
+        "code": "LU",
+        "flagImage": "require('./4x3/lu.svg')",
+        "locale": "fr_LU",
+        "currency": "EUR",
+        "currencyName": "Euro",
+        "continent": "Europe"
+    },
+    "MO": {
+        "name": "Macao",
+        "dial_code": "+853",
+        "code": "MO",
+        "flagImage": "require('./4x3/mo.svg')",
+        "locale": "zh_Hans_MO",
+        "currency": "MOP",
+        "currencyName": "Pataca",
+        "continent": "Asia"
+    },
+    "MK": {
+        "name": "Macedonia",
+        "dial_code": "+389",
+        "code": "MK",
+        "flagImage": "require('./4x3/mk.svg')",
+        "locale": "mk_MK",
+        "currency": "MKD",
+        "currencyName": "Denar",
+        "continent": "Europe"
+    },
+    "MG": {
+        "name": "Madagascar",
+        "dial_code": "+261",
+        "code": "MG",
+        "flagImage": "require('./4x3/mg.svg')",
+        "locale": "fr_MG",
+        "currency": "MGA",
+        "currencyName": "Malagasy Ariary",
+        "continent": "Africa"
+    },
+    "MW": {
+        "name": "Malawi",
+        "dial_code": "+265",
+        "code": "MW",
+        "flagImage": "require('./4x3/mw.svg')",
+        "locale": "en",
+        "currency": "MWK",
+        "currencyName": "Malawi Kwacha",
+        "continent": "Africa"
+    },
+    "MY": {
+        "name": "Malaysia",
+        "dial_code": "+60",
+        "code": "MY",
+        "flagImage": "require('./4x3/my.svg')",
+        "locale": "ms_MY",
+        "currency": "MYR",
+        "currencyName": "Malaysian Ringgit",
+        "continent": "Asia"
+    },
+    "MV": {
+        "name": "Maldives",
+        "dial_code": "+960",
+        "code": "MV",
+        "flagImage": "require('./4x3/mv.svg')",
+        "locale": "dv",
+        "currency": "MVR",
+        "currencyName": "Rufiyaa",
+        "continent": "Asia"
+    },
+    "ML": {
+        "name": "Mali",
+        "dial_code": "+223",
+        "code": "ML",
+        "flagImage": "require('./4x3/ml.svg')",
+        "locale": "fr_ML",
+        "currency": "XOF",
+        "currencyName": "CFA Franc BCEAO",
+        "continent": "Africa"
+    },
+    "MT": {
+        "name": "Malta",
+        "dial_code": "+356",
+        "code": "MT",
+        "flagImage": "require('./4x3/mt.svg')",
+        "locale": "en_MT",
+        "currency": "EUR",
+        "currencyName": "Euro",
+        "continent": "Europe"
+    },
+    "MH": {
+        "name": "Marshall Islands",
+        "dial_code": "+692",
+        "code": "MH",
+        "flagImage": "require('./4x3/mh.svg')",
+        "locale": "en_MH",
+        "currency": "USD",
+        "currencyName": "US Dollar",
+        "continent": "Oceania"
+    },
+    "MQ": {
+        "name": "Martinique",
+        "dial_code": "+596",
+        "code": "MQ",
+        "flagImage": "require('./4x3/mq.svg')",
+        "locale": "fr_MQ",
+        "currency": "EUR",
+        "currencyName": "Euro",
+        "continent": "Americas"
+    },
+    "MR": {
+        "name": "Mauritania",
+        "dial_code": "+222",
+        "code": "MR",
+        "flagImage": "require('./4x3/mr.svg')",
+        "locale": "ar",
+        "currency": "MRU",
+        "currencyName": "Ouguiya",
+        "continent": "Africa"
+    },
+    "MU": {
+        "name": "Mauritius",
+        "dial_code": "+230",
+        "code": "MU",
+        "flagImage": "require('./4x3/mu.svg')",
+        "locale": "en_MU",
+        "currency": "MUR",
+        "currencyName": "Mauritius Rupee",
+        "continent": "Africa"
+    },
+    "YT": {
+        "name": "Mayotte",
+        "dial_code": "+262",
+        "code": "YT",
+        "flagImage": "require('./4x3/yt.svg')",
+        "locale": "fr",
+        "currency": "EUR",
+        "currencyName": "Euro",
+        "continent": "Africa"
+    },
+    "MX": {
+        "name": "Mexico",
+        "dial_code": "+52",
+        "code": "MX",
+        "flagImage": "require('./4x3/mx.svg')",
+        "locale": "es_MX",
+        "currency": "MXN",
+        "currencyName": "Mexican Peso",
+        "continent": "Americas"
+    },
+    "FM": {
+        "name": "Micronesia, Federated States of Micronesia",
+        "dial_code": "+691",
+        "code": "FM",
+        "flagImage": "require('./4x3/fm.svg')",
+        "locale": "en",
+        "currency": "RUB",
+        "currencyName": "Russian Ruble",
+        "continent": "Oceania"
+    },
+    "MD": {
+        "name": "Moldova",
+        "dial_code": "+373",
+        "code": "MD",
+        "flagImage": "require('./4x3/md.svg')",
+        "locale": "ro_MD",
+        "currency": "MDL",
+        "currencyName": "Moldovan Leu",
+        "continent": "Europe"
+    },
+    "MC": {
+        "name": "Monaco",
+        "dial_code": "+377",
+        "code": "MC",
+        "flagImage": "require('./4x3/mc.svg')",
+        "locale": "fr_MC",
+        "currency": "EUR",
+        "currencyName": "Euro",
+        "continent": "Europe"
+    },
+    "MN": {
+        "name": "Mongolia",
+        "dial_code": "+976",
+        "code": "MN",
+        "flagImage": "require('./4x3/mn.svg')",
+        "locale": "mn",
+        "currency": "MNT",
+        "currencyName": "Tugrik",
+        "continent": "Asia"
+    },
+    "ME": {
+        "name": "Montenegro",
+        "dial_code": "+382",
+        "code": "ME",
+        "flagImage": "require('./4x3/me.svg')",
+        "locale": "sr_Cyrl_ME",
+        "currency": "EUR",
+        "currencyName": "Euro",
+        "continent": "Europe"
+    },
+    "MS": {
+        "name": "Montserrat",
+        "dial_code": "+1664",
+        "code": "MS",
+        "flagImage": "require('./4x3/ms.svg')",
+        "locale": "en",
+        "currency": "XCD",
+        "currencyName": "East Caribbean Dollar",
+        "continent": "Americas"
+    },
+    "MA": {
+        "name": "Morocco",
+        "dial_code": "+212",
+        "code": "MA",
+        "flagImage": "require('./4x3/ma.svg')",
+        "locale": "ar_MA",
+        "currency": "MAD",
+        "currencyName": "Moroccan Dirham",
+        "continent": "Africa"
+    },
+    "MZ": {
+        "name": "Mozambique",
+        "dial_code": "+258",
+        "code": "MZ",
+        "flagImage": "require('./4x3/mz.svg')",
+        "locale": "pt_MZ",
+        "currency": "MZN",
+        "currencyName": "Mozambique Metical",
+        "continent": "Africa"
+    },
+    "MM": {
+        "name": "Myanmar",
+        "dial_code": "+95",
+        "code": "MM",
+        "flagImage": "require('./4x3/mm.svg')",
+        "locale": "my_MM",
+        "currency": "MMK",
+        "currencyName": "Kyat",
+        "continent": "Asia"
+    },
+    "NA": {
+        "name": "Namibia",
+        "dial_code": "+264",
+        "code": "NA",
+        "flagImage": "require('./4x3/na.svg')",
+        "locale": "en_NA",
+        "currency": "ZAR",
+        "currencyName": "Rand",
+        "continent": "Africa"
+    },
+    "NR": {
+        "name": "Nauru",
+        "dial_code": "+674",
+        "code": "NR",
+        "flagImage": "require('./4x3/nr.svg')",
+        "locale": "en",
+        "currency": "AUD",
+        "currencyName": "Australian Dollar",
+        "continent": "Oceania"
+    },
+    "NP": {
+        "name": "Nepal",
+        "dial_code": "+977",
+        "code": "NP",
+        "flagImage": "require('./4x3/np.svg')",
+        "locale": "ne_NP",
+        "currency": "NPR",
+        "currencyName": "Nepalese Rupee",
+        "continent": "Asia"
+    },
+    "NL": {
+        "name": "Netherlands",
+        "dial_code": "+31",
+        "code": "NL",
+        "flagImage": "require('./4x3/nl.svg')",
+        "locale": "nl_NL",
+        "currency": "EUR",
+        "currencyName": "Euro",
+        "continent": "Europe"
+    },
+    "NC": {
+        "name": "New Caledonia",
+        "dial_code": "+687",
+        "code": "NC",
+        "flagImage": "require('./4x3/nc.svg')",
+        "locale": "fr",
+        "currency": "XPF",
+        "currencyName": "CFP Franc",
+        "continent": "Oceania"
+    },
+    "NZ": {
+        "name": "New Zealand",
+        "dial_code": "+64",
+        "code": "NZ",
+        "flagImage": "require('./4x3/nz.svg')",
+        "locale": "en_NZ",
+        "currency": "NZD",
+        "currencyName": "New Zealand Dollar",
+        "continent": "Oceania"
+    },
+    "NI": {
+        "name": "Nicaragua",
+        "dial_code": "+505",
+        "code": "NI",
+        "flagImage": "require('./4x3/ni.svg')",
+        "locale": "es_NI",
+        "currency": "NIO",
+        "currencyName": "Cordoba Oro",
+        "continent": "Americas"
+    },
+    "NE": {
+        "name": "Niger",
+        "dial_code": "+227",
+        "code": "NE",
+        "flagImage": "require('./4x3/ne.svg')",
+        "locale": "fr_NE",
+        "currency": "XOF",
+        "currencyName": "CFA Franc BCEAO",
+        "continent": "Africa"
+    },
+    "NG": {
+        "name": "Nigeria",
+        "dial_code": "+234",
+        "code": "NG",
+        "flagImage": "require('./4x3/ng.svg')",
+        "locale": "en_NG",
+        "currency": "NGN",
+        "currencyName": "Naira",
+        "continent": "Africa"
+    },
+    "NU": {
+        "name": "Niue",
+        "dial_code": "+683",
+        "code": "NU",
+        "flagImage": "require('./4x3/nu.svg')",
+        "locale": "en",
+        "currency": "NZD",
+        "currencyName": "New Zealand Dollar",
+        "continent": "Oceania"
+    },
+    "NF": {
+        "name": "Norfolk Island",
+        "dial_code": "+672",
+        "code": "NF",
+        "flagImage": "require('./4x3/nf.svg')",
+        "locale": "en",
+        "currency": "AUD",
+        "currencyName": "Australian Dollar",
+        "continent": "Oceania"
+    },
+    "MP": {
+        "name": "Northern Mariana Islands",
+        "dial_code": "+1670",
+        "code": "MP",
+        "flagImage": "require('./4x3/mp.svg')",
+        "locale": "en_MP",
+        "currency": "USD",
+        "currencyName": "US Dollar",
+        "continent": "Oceania"
+    },
+    "NO": {
+        "name": "Norway",
+        "dial_code": "+47",
+        "code": "NO",
+        "flagImage": "require('./4x3/no.svg')",
+        "locale": "nb_NO",
+        "currency": "NOK",
+        "currencyName": "Norwegian Krone",
+        "continent": "Europe"
+    },
+    "OM": {
+        "name": "Oman",
+        "dial_code": "+968",
+        "code": "OM",
+        "flagImage": "require('./4x3/om.svg')",
+        "locale": "ar_OM",
+        "currency": "OMR",
+        "currencyName": "Rial Omani",
+        "continent": "Asia"
+    },
+    "PK": {
+        "name": "Pakistan",
+        "dial_code": "+92",
+        "code": "PK",
+        "flagImage": "require('./4x3/pk.svg')",
+        "locale": "en_PK",
+        "currency": "PKR",
+        "currencyName": "Pakistan Rupee",
+        "continent": "Asia"
+    },
+    "PW": {
+        "name": "Palau",
+        "dial_code": "+680",
+        "code": "PW",
+        "flagImage": "require('./4x3/pw.svg')",
+        "locale": "en",
+        "currency": "USD",
+        "currencyName": "US Dollar",
+        "continent": "Oceania"
+    },
+    "PS": {
+        "name": "Palestinian Territory, Occupied",
+        "dial_code": "+970",
+        "code": "PS",
+        "flagImage": "require('./4x3/ps.svg')",
+        "locale": "ar",
+        "currency": "USD",
+        "currencyName": "US Dollar",
+        "continent": "Asia"
+    },
+    "PA": {
+        "name": "Panama",
+        "dial_code": "+507",
+        "code": "PA",
+        "flagImage": "require('./4x3/pa.svg')",
+        "locale": "es_PA",
+        "currency": "USD",
+        "currencyName": "US Dollar",
+        "continent": "Americas"
+    },
+    "PG": {
+        "name": "Papua New Guinea",
+        "dial_code": "+675",
+        "code": "PG",
+        "flagImage": "require('./4x3/pg.svg')",
+        "locale": "en",
+        "currency": "PGK",
+        "currencyName": "Kina",
+        "continent": "Oceania"
+    },
+    "PY": {
+        "name": "Paraguay",
+        "dial_code": "+595",
+        "code": "PY",
+        "flagImage": "require('./4x3/py.svg')",
+        "locale": "es_PY",
+        "currency": "PYG",
+        "currencyName": "Guarani",
+        "continent": "Americas"
+    },
+    "PE": {
+        "name": "Peru",
+        "dial_code": "+51",
+        "code": "PE",
+        "flagImage": "require('./4x3/pe.svg')",
+        "locale": "es_PE",
+        "currency": "PEN",
+        "currencyName": "Sol",
+        "continent": "Americas"
+    },
+    "PH": {
+        "name": "Philippines",
+        "dial_code": "+63",
+        "code": "PH",
+        "flagImage": "require('./4x3/ph.svg')",
+        "locale": "en_PH",
+        "currency": "PHP",
+        "currencyName": "Philippine Peso",
+        "continent": "Asia"
+    },
+    "PN": {
+        "name": "Pitcairn",
+        "dial_code": "+872",
+        "code": "PN",
+        "flagImage": "require('./4x3/pn.svg')",
+        "locale": "en",
+        "currency": "NZD",
+        "currencyName": "New Zealand Dollar",
+        "continent": "Oceania"
+    },
+    "PL": {
+        "name": "Poland",
+        "dial_code": "+48",
+        "code": "PL",
+        "flagImage": "require('./4x3/pl.svg')",
+        "locale": "pl_PL",
+        "currency": "PLN",
+        "currencyName": "Zloty",
+        "continent": "Europe"
+    },
+    "PT": {
+        "name": "Portugal",
+        "dial_code": "+351",
+        "code": "PT",
+        "flagImage": "require('./4x3/pt.svg')",
+        "locale": "pt_PT",
+        "currency": "EUR",
+        "currencyName": "Euro",
+        "continent": "Europe"
+    },
+    "PR": {
+        "name": "Puerto Rico",
+        "dial_code": "+1939",
+        "code": "PR",
+        "flagImage": "require('./4x3/pr.svg')",
+        "locale": "es_PR",
+        "currency": "USD",
+        "currencyName": "US Dollar",
+        "continent": "Americas"
+    },
+    "QA": {
+        "name": "Qatar",
+        "dial_code": "+974",
+        "code": "QA",
+        "flagImage": "require('./4x3/qa.svg')",
+        "locale": "ar_QA",
+        "currency": "QAR",
+        "currencyName": "Qatari Rial",
+        "continent": "Asia"
+    },
+    "RO": {
+        "name": "Romania",
+        "dial_code": "+40",
+        "code": "RO",
+        "flagImage": "require('./4x3/ro.svg')",
+        "locale": "ro_RO",
+        "currency": "RON",
+        "currencyName": "Romanian Leu",
+        "continent": "Europe"
+    },
+    "RU": {
+        "name": "Russia",
+        "dial_code": "+7",
+        "code": "RU",
+        "flagImage": "require('./4x3/ru.svg')",
+        "locale": "ru_RU",
+        "currency": "RUB",
+        "currencyName": "Russian Ruble",
+        "continent": "Asia"
+    },
+    "RW": {
+        "name": "Rwanda",
+        "dial_code": "+250",
+        "code": "RW",
+        "flagImage": "require('./4x3/rw.svg')",
+        "locale": "fr_RW",
+        "currency": "RWF",
+        "currencyName": "Rwanda Franc",
+        "continent": "Africa"
+    },
+    "RE": {
+        "name": "Reunion",
+        "dial_code": "+262",
+        "code": "RE",
+        "flagImage": "require('./4x3/re.svg')",
+        "locale": "fr_RE",
+        "currency": "RWF",
+        "currencyName": "Rwanda Franc",
+        "continent": "Africa"
+    },
+    "BL": {
+        "name": "Saint Barthelemy",
+        "dial_code": "+590",
+        "code": "BL",
+        "flagImage": "require('./4x3/bl.svg')",
+        "locale": "fr_BL",
+        "currency": "EUR",
+        "currencyName": "Euro",
+        "continent": "Americas"
+    },
+    "SH": {
+        "name": "Saint Helena, Ascension and Tristan Da Cunha",
+        "dial_code": "+290",
+        "code": "SH",
+        "flagImage": "require('./4x3/sh.svg')",
+        "locale": "en",
+        "currency": "SHP",
+        "currencyName": "Saint Helena Pound",
+        "continent": "Atlantic Ocean"
+    },
+    "KN": {
+        "name": "Saint Kitts and Nevis",
+        "dial_code": "+1869",
+        "code": "KN",
+        "flagImage": "require('./4x3/kn.svg')",
+        "locale": "en",
+        "currency": "XCD",
+        "currencyName": "East Caribbean Dollar",
+        "continent": "Americas"
+    },
+    "LC": {
+        "name": "Saint Lucia",
+        "dial_code": "+1758",
+        "code": "LC",
+        "flagImage": "require('./4x3/lc.svg')",
+        "locale": "en",
+        "currency": "XCD",
+        "currencyName": "East Caribbean Dollar",
+        "continent": "Americas"
+    },
+    "MF": {
+        "name": "Saint Martin",
+        "dial_code": "+590",
+        "code": "MF",
+        "flagImage": "require('./4x3/mf.svg')",
+        "locale": "fr_MF",
+        "currency": "EUR",
+        "currencyName": "Euro",
+        "continent": "Americas"
+    },
+    "PM": {
+        "name": "Saint Pierre and Miquelon",
+        "dial_code": "+508",
+        "code": "PM",
+        "flagImage": "require('./4x3/pm.svg')",
+        "locale": "fr",
+        "currency": "EUR",
+        "currencyName": "Euro",
+        "continent": "Americas"
+    },
+    "VC": {
+        "name": "Saint Vincent and the Grenadines",
+        "dial_code": "+1784",
+        "code": "VC",
+        "flagImage": "require('./4x3/vc.svg')",
+        "locale": "en",
+        "currency": "XCD",
+        "currencyName": "East Caribbean Dollar",
+        "continent": "Americas"
+    },
+    "WS": {
+        "name": "Samoa",
+        "dial_code": "+685",
+        "code": "WS",
+        "flagImage": "require('./4x3/ws.svg')",
+        "locale": "sm",
+        "currency": "WST",
+        "currencyName": "Tala",
+        "continent": "Oceania"
+    },
+    "SM": {
+        "name": "San Marino",
+        "dial_code": "+378",
+        "code": "SM",
+        "flagImage": "require('./4x3/sm.svg')",
+        "locale": "it",
+        "currency": "EUR",
+        "currencyName": "Euro",
+        "continent": "Europe"
+    },
+    "ST": {
+        "name": "Sao Tome and Principe",
+        "dial_code": "+239",
+        "code": "ST",
+        "flagImage": "require('./4x3/st.svg')",
+        "locale": "pt",
+        "currency": "STN",
+        "currencyName": "Dobra",
+        "continent": "Africa"
+    },
+    "SA": {
+        "name": "Saudi Arabia",
+        "dial_code": "+966",
+        "code": "SA",
+        "flagImage": "require('./4x3/sa.svg')",
+        "locale": "ar_SA",
+        "currency": "SAR",
+        "currencyName": "Saudi Riyal",
+        "continent": "Asia"
+    },
+    "SN": {
+        "name": "Senegal",
+        "dial_code": "+221",
+        "code": "SN",
+        "flagImage": "require('./4x3/sn.svg')",
+        "locale": "fr_SN",
+        "currency": "XOF",
+        "currencyName": "CFA Franc BCEAO",
+        "continent": "Africa"
+    },
+    "RS": {
+        "name": "Serbia",
+        "dial_code": "+381",
+        "code": "RS",
+        "flagImage": "require('./4x3/rs.svg')",
+        "locale": "sr_Cyrl_RS",
+        "currency": "RSD",
+        "currencyName": "Serbian Dinar",
+        "continent": "Europe"
+    },
+    "SC": {
+        "name": "Seychelles",
+        "dial_code": "+248",
+        "code": "SC",
+        "flagImage": "require('./4x3/sc.svg')",
+        "locale": "fr",
+        "currency": "SCR",
+        "currencyName": "Seychelles Rupee",
+        "continent": "Africa"
+    },
+    "SL": {
+        "name": "Sierra Leone",
+        "dial_code": "+232",
+        "code": "SL",
+        "flagImage": "require('./4x3/sl.svg')",
+        "locale": "en",
+        "currency": "SLL",
+        "currencyName": "Leone",
+        "continent": "Africa"
+    },
+    "SG": {
+        "name": "Singapore",
+        "dial_code": "+65",
+        "code": "SG",
+        "flagImage": "require('./4x3/sg.svg')",
+        "locale": "en_SG",
+        "currency": "SGD",
+        "currencyName": "Singapore Dollar",
+        "continent": "Asia"
+    },
+    "SK": {
+        "name": "Slovakia",
+        "dial_code": "+421",
+        "code": "SK",
+        "flagImage": "require('./4x3/sk.svg')",
+        "locale": "sk_SK",
+        "currency": "EUR",
+        "currencyName": "Euro",
+        "continent": "Europe"
+    },
+    "SI": {
+        "name": "Slovenia",
+        "dial_code": "+386",
+        "code": "SI",
+        "flagImage": "require('./4x3/si.svg')",
+        "locale": "sl_SI",
+        "currency": "EUR",
+        "currencyName": "Euro",
+        "continent": "Europe"
+    },
+    "SB": {
+        "name": "Solomon Islands",
+        "dial_code": "+677",
+        "code": "SB",
+        "flagImage": "require('./4x3/sb.svg')",
+        "locale": "en",
+        "currency": "SBD",
+        "currencyName": "Solomon Islands Dollar",
+        "continent": "Oceania"
+    },
+    "SO": {
+        "name": "Somalia",
+        "dial_code": "+252",
+        "code": "SO",
+        "flagImage": "require('./4x3/so.svg')",
+        "locale": "so_SO",
+        "currency": "SOS",
+        "currencyName": "Somali Shilling",
+        "continent": "Africa"
+    },
+    "ZA": {
+        "name": "South Africa",
+        "dial_code": "+27",
+        "code": "ZA",
+        "flagImage": "require('./4x3/za.svg')",
+        "locale": "af_ZA",
+        "currency": "ZAR",
+        "currencyName": "Rand",
+        "continent": "Africa"
+    },
+    "SS": {
+        "name": "South Sudan",
+        "dial_code": "+211",
+        "code": "SS",
+        "flagImage": "require('./4x3/ss.svg')",
+        "locale": "en",
+        "currency": "SSP",
+        "currencyName": "South Sudanese Pound",
+        "continent": "Africa"
+    },
+    "GS": {
+        "name": "South Georgia and the South Sandwich Islands",
+        "dial_code": "+500",
+        "code": "GS",
+        "flagImage": "require('./4x3/gs.svg')",
+        "locale": "en",
+        "currency": "USD",
+        "currencyName": "US Dollar",
+        "continent": "Atlantic Ocean"
+    },
+    "ES": {
+        "name": "Spain",
+        "dial_code": "+34",
+        "code": "ES",
+        "flagImage": "require('./4x3/es.svg')",
+        "locale": "es_ES",
+        "currency": "EUR",
+        "currencyName": "Euro",
+        "continent": "Europe"
+    },
+    "LK": {
+        "name": "Sri Lanka",
+        "dial_code": "+94",
+        "code": "LK",
+        "flagImage": "require('./4x3/lk.svg')",
+        "locale": "si_LK",
+        "currency": "LKR",
+        "currencyName": "Sri Lanka Rupee",
+        "continent": "Asia"
+    },
+    "SD": {
+        "name": "Sudan",
+        "dial_code": "+249",
+        "code": "SD",
+        "flagImage": "require('./4x3/sd.svg')",
+        "locale": "ar_SD",
+        "currency": "SDG",
+        "currencyName": "Sudanese Pound",
+        "continent": "Africa"
+    },
+    "SR": {
+        "name": "Suriname",
+        "dial_code": "+597",
+        "code": "SR",
+        "flagImage": "require('./4x3/sr.svg')",
+        "locale": "nl",
+        "currency": "SRD",
+        "currencyName": "Surinam Dollar",
+        "continent": "Americas"
+    },
+    "SJ": {
+        "name": "Svalbard and Jan Mayen",
+        "dial_code": "+47",
+        "code": "SJ",
+        "flagImage": "require('./4x3/sj.svg')",
+        "locale": "no",
+        "currency": "NOK",
+        "currencyName": "Norwegian Krone",
+        "continent": "Europe"
+    },
+    "SZ": {
+        "name": "Swaziland",
+        "dial_code": "+268",
+        "code": "SZ",
+        "flagImage": "require('./4x3/sz.svg')",
+        "locale": "en",
+        "currency": "EUR",
+        "currencyName": "Euro",
+        "continent": "Africa"
+    },
+    "SE": {
+        "name": "Sweden",
+        "dial_code": "+46",
+        "code": "SE",
+        "flagImage": "require('./4x3/se.svg')",
+        "locale": "sv_SE",
+        "currency": "SEK",
+        "currencyName": "Swedish Krona",
+        "continent": "Europe"
+    },
+    "CH": {
+        "name": "Switzerland",
+        "dial_code": "+41",
+        "code": "CH",
+        "flagImage": "require('./4x3/ch.svg')",
+        "locale": "fr_CH",
+        "currency": "CHF",
+        "currencyName": "Swiss Franc",
+        "continent": "Europe"
+    },
+    "SY": {
+        "name": "Syrian Arab Republic",
+        "dial_code": "+963",
+        "code": "SY",
+        "flagImage": "require('./4x3/sy.svg')",
+        "locale": "ar_SY",
+        "currency": "SYP",
+        "currencyName": "Syrian Pound",
+        "continent": "Asia"
+    },
+    "TW": {
+        "name": "Taiwan",
+        "dial_code": "+886",
+        "code": "TW",
+        "flagImage": "require('./4x3/tw.svg')",
+        "locale": "zh_Hant_TW",
+        "currency": "TWD",
+        "currencyName": "New Taiwan Dollar",
+        "continent": "Asia"
+    },
+    "TJ": {
+        "name": "Tajikistan",
+        "dial_code": "+992",
+        "code": "TJ",
+        "flagImage": "require('./4x3/tj.svg')",
+        "locale": "tg",
+        "currency": "TJS",
+        "currencyName": "Somoni",
+        "continent": "Asia"
+    },
+    "TZ": {
+        "name": "Tanzania, United Republic of Tanzania",
+        "dial_code": "+255",
+        "code": "TZ",
+        "flagImage": "require('./4x3/tz.svg')",
+        "locale": "asa_TZ",
+        "currency": "TZS",
+        "currencyName": "Tanzanian Shilling",
+        "continent": "Africa"
+    },
+    "TH": {
+        "name": "Thailand",
+        "dial_code": "+66",
+        "code": "TH",
+        "flagImage": "require('./4x3/th.svg')",
+        "locale": "th_TH",
+        "currency": "THB",
+        "currencyName": "Baht",
+        "continent": "Asia"
+    },
+    "TL": {
+        "name": "Timor-Leste",
+        "dial_code": "+670",
+        "code": "TL",
+        "flagImage": "require('./4x3/tl.svg')",
+        "locale": "pt",
+        "currency": "USD",
+        "currencyName": "US Dollar",
+        "continent": "Asia"
+    },
+    "TG": {
+        "name": "Togo",
+        "dial_code": "+228",
+        "code": "TG",
+        "flagImage": "require('./4x3/tg.svg')",
+        "locale": "fr_TG",
+        "currency": "XOF",
+        "currencyName": "CFA Franc BCEAO",
+        "continent": "Africa"
+    },
+    "TK": {
+        "name": "Tokelau",
+        "dial_code": "+690",
+        "code": "TK",
+        "flagImage": "require('./4x3/tk.svg')",
+        "locale": "en",
+        "currency": "NZD",
+        "currencyName": "New Zealand Dollar",
+        "continent": "Oceania"
+    },
+    "TO": {
+        "name": "Tonga",
+        "dial_code": "+676",
+        "code": "TO",
+        "flagImage": "require('./4x3/to.svg')",
+        "locale": "to_TO",
+        "currency": "TOP",
+        "currencyName": "Pa’anga",
+        "continent": "Oceania"
+    },
+    "TT": {
+        "name": "Trinidad and Tobago",
+        "dial_code": "+1868",
+        "code": "TT",
+        "flagImage": "require('./4x3/tt.svg')",
+        "locale": "en_TT",
+        "currency": "TTD",
+        "currencyName": "Trinidad and Tobago Dollar",
+        "continent": "Americas"
+    },
+    "TN": {
+        "name": "Tunisia",
+        "dial_code": "+216",
+        "code": "TN",
+        "flagImage": "require('./4x3/tn.svg')",
+        "locale": "ar_TN",
+        "currency": "TND",
+        "currencyName": "Tunisian Dinar",
+        "continent": "Africa"
+    },
+    "TR": {
+        "name": "Turkey",
+        "dial_code": "+90",
+        "code": "TR",
+        "flagImage": "require('./4x3/tr.svg')",
+        "locale": "tr_TR",
+        "currency": "TRY",
+        "currencyName": "Turkish Lira",
+        "continent": "Asia"
+    },
+    "TM": {
+        "name": "Turkmenistan",
+        "dial_code": "+993",
+        "code": "TM",
+        "flagImage": "require('./4x3/tm.svg')",
+        "locale": "tk",
+        "currency": "TMT",
+        "currencyName": "Turkmenistan New Manat",
+        "continent": "Asia"
+    },
+    "TC": {
+        "name": "Turks and Caicos Islands",
+        "dial_code": "+1649",
+        "code": "TC",
+        "flagImage": "require('./4x3/tc.svg')",
+        "locale": "en",
+        "currency": "USD",
+        "currencyName": "US Dollar",
+        "continent": "Americas"
+    },
+    "TV": {
+        "name": "Tuvalu",
+        "dial_code": "+688",
+        "code": "TV",
+        "flagImage": "require('./4x3/tv.svg')",
+        "locale": "en",
+        "currency": "AUD",
+        "currencyName": "Australian Dollar",
+        "continent": "Oceania"
+    },
+    "UG": {
+        "name": "Uganda",
+        "dial_code": "+256",
+        "code": "UG",
+        "flagImage": "require('./4x3/ug.svg')",
+        "locale": "cgg_UG",
+        "currency": "UGX",
+        "currencyName": "Uganda Shilling",
+        "continent": "Africa"
+    },
+    "UA": {
+        "name": "Ukraine",
+        "dial_code": "+380",
+        "code": "UA",
+        "flagImage": "require('./4x3/ua.svg')",
+        "locale": "uk_UA",
+        "currency": "UAH",
+        "currencyName": "Hryvnia",
+        "continent": "Europe"
+    },
+    "AE": {
+        "name": "United Arab Emirates",
+        "dial_code": "+971",
+        "code": "AE",
+        "flagImage": "require('./4x3/ae.svg')",
+        "locale": "ar_AE",
+        "currency": "AED",
+        "currencyName": "UAE Dirham",
+        "continent": "Asia"
+    },
+    "GB": {
+        "name": "United Kingdom",
+        "dial_code": "+44",
+        "code": "GB",
+        "flagImage": "require('./4x3/gb.svg')",
+        "locale": "en_GB",
+        "currency": "GBP",
+        "currencyName": "Pound Sterling",
+        "continent": "Europe"
+    },
+    "US": {
+        "name": "United States",
+        "dial_code": "+1",
+        "code": "US",
+        "flagImage": "require('./4x3/us.svg')",
+        "locale": "en_US",
+        "currency": "USD",
+        "currencyName": "US Dollar",
+        "continent": "Americas"
+    },
+    "UY": {
+        "name": "Uruguay",
+        "dial_code": "+598",
+        "code": "UY",
+        "flagImage": "require('./4x3/uy.svg')",
+        "locale": "es_UY",
+        "currency": "UYU",
+        "currencyName": "Peso Uruguayo",
+        "continent": "Americas"
+    },
+    "UZ": {
+        "name": "Uzbekistan",
+        "dial_code": "+998",
+        "code": "UZ",
+        "flagImage": "require('./4x3/uz.svg')",
+        "locale": "uz_Cyrl_UZ",
+        "currency": "UZS",
+        "currencyName": "Uzbekistan Sum",
+        "continent": "Asia"
+    },
+    "VU": {
+        "name": "Vanuatu",
+        "dial_code": "+678",
+        "code": "VU",
+        "flagImage": "require('./4x3/vu.svg')",
+        "locale": "bi",
+        "currency": "VUV",
+        "currencyName": "Vatu",
+        "continent": "Oceania"
+    },
+    "VE": {
+        "name": "Venezuela, Bolivarian Republic of Venezuela",
+        "dial_code": "+58",
+        "code": "VE",
+        "flagImage": "require('./4x3/ve.svg')",
+        "locale": "es_VE",
+        "currency": "VUV",
+        "currencyName": "Vatu",
+        "continent": "Americas"
+    },
+    "VN": {
+        "name": "Vietnam",
+        "dial_code": "+84",
+        "code": "VN",
+        "flagImage": "require('./4x3/vn.svg')",
+        "locale": "vi_VN",
+        "currency": "VND",
+        "currencyName": "Dong",
+        "continent": "Asia"
+    },
+    "VG": {
+        "name": "Virgin Islands, British",
+        "dial_code": "+1284",
+        "code": "VG",
+        "flagImage": "require('./4x3/vg.svg')",
+        "locale": "en",
+        "currency": "USD",
+        "currencyName": "US Dollar",
+        "continent": "Americas"
+    },
+    "VI": {
+        "name": "Virgin Islands, U.S.",
+        "dial_code": "+1340",
+        "code": "VI",
+        "flagImage": "require('./4x3/vi.svg')",
+        "locale": "en_VI",
+        "currency": "USD",
+        "currencyName": "US Dollar",
+        "continent": "Americas"
+    },
+    "WF": {
+        "name": "Wallis and Futuna",
+        "dial_code": "+681",
+        "code": "WF",
+        "flagImage": "require('./4x3/wf.svg')",
+        "locale": "fr",
+        "currency": "XPF",
+        "currencyName": "CFP Franc",
+        "continent": "Oceania"
+    },
+    "YE": {
+        "name": "Yemen",
+        "dial_code": "+967",
+        "code": "YE",
+        "flagImage": "require('./4x3/ye.svg')",
+        "locale": "ar_YE",
+        "currency": "YER",
+        "currencyName": "Yemeni Rial",
+        "continent": "Asia"
+    },
+    "ZM": {
+        "name": "Zambia",
+        "dial_code": "+260",
+        "code": "ZM",
+        "flagImage": "require('./4x3/zm.svg')",
+        "locale": "bem_ZM",
+        "currency": "ZMW",
+        "currencyName": "Zambian Kwacha",
+        "continent": "Africa"
+    },
+    "ZW": {
+        "name": "Zimbabwe",
+        "dial_code": "+263",
+        "code": "ZW",
+        "flagImage": "require('./4x3/zw.svg')",
+        "locale": "en_ZW",
+        "currency": "ZWL",
+        "currencyName": "Zimbabwe Dollar",
+        "continent": "Africa"
+    }
+}
