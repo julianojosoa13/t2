@@ -14,6 +14,7 @@ import {
   MaterialCommunityIcons,
 } from "@expo/vector-icons";
 import Ripple from "react-native-material-ripple";
+import Animated, { FadeInDown, FadeInUp } from "react-native-reanimated";
 
 const bgColor = "#EFEFEF";
 const fgColor = "#828282";
@@ -21,14 +22,16 @@ const fgColor = "#828282";
 const CreateEvent = () => {
   return (
     <SafeAreaView className="bg-primary flex-1">
-      <Header title="" backTo="Onboarding" />
-
-      <TextInput
-        placeholder="Nom de l'évenement"
-        className="px-4 text-2xl font-cabin-bold"
-        multiline
-      />
-      <ScrollView
+      <Header title="" backTo="" />
+      <Animated.View entering={FadeInUp.duration(600)}>
+        <TextInput
+          placeholder="Nom de l'évenement"
+          className="px-4 text-2xl font-cabin-bold"
+          multiline
+        />
+      </Animated.View>
+      <Animated.ScrollView
+        entering={FadeInDown.duration(600)}
         className="flex-1 bg-white rounded-t-3xl mt-2 pt-4 px-4"
         showsVerticalScrollIndicator={false}
         contentContainerClassName="flex flex-1"
@@ -133,7 +136,7 @@ const CreateEvent = () => {
 
         <View className="flex-row items-center justify-between gap-5">
           <Ripple
-            className={`bg-primary-100 w-2/5 h-12 overflow-hidden rounded-xl justify-center`}
+            className={`bg-primary-100 w-5/12 h-12 overflow-hidden rounded-xl justify-center`}
           >
             <View className="flex-row items-center px-4 gap-2">
               <AntDesign name="check" color="#2C7D4E" size={18} />
@@ -145,7 +148,7 @@ const CreateEvent = () => {
             </View>
           </Ripple>
           <Ripple
-            className={`bg-[${bgColor}] w-2/5 h-12 overflow-hidden rounded-xl justify-center`}
+            className={`bg-[${bgColor}] w-5/12 h-12 overflow-hidden rounded-xl justify-center`}
           >
             <View className="flex-row items-center px-4 gap-2">
               <View />
@@ -188,7 +191,7 @@ const CreateEvent = () => {
         >
           <Entypo name="chevron-thin-right" size={20} color={"#303338"} />
         </Ripple>
-      </ScrollView>
+      </Animated.ScrollView>
     </SafeAreaView>
   );
 };
