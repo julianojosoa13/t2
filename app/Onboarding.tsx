@@ -1,25 +1,40 @@
 import React from "react";
 import { Text, Image, ScrollView, View, TouchableOpacity } from "react-native";
+import Animated, {
+  FadeInDown,
+  FadeInLeft,
+  FadeInUp,
+} from "react-native-reanimated";
 
 const Onboarding = () => {
   return (
     <ScrollView showsVerticalScrollIndicator={false} className="">
       <View className="bg-primary-100 py-4">
-        <Image
+        <Animated.Image
+          entering={FadeInLeft.delay(150).duration(500).stiffness(5)}
           className="w-full h-[500]"
           resizeMode="contain"
           source={require("@/assets/images/onboardingImage.png")}
         />
-        <Text className="text-center text-primary-300 font-cabin-bold text-3xl mb-4">
+        <Animated.Text
+          className="text-center text-primary-300 font-cabin-bold text-3xl mb-4"
+          entering={FadeInUp}
+        >
           Votre évènement démarre ici!
-        </Text>
-        <Text className="text-center mx-12 font-sm font-nunito">
+        </Animated.Text>
+        <Animated.Text
+          className="text-center mx-12 font-sm font-nunito"
+          entering={FadeInDown}
+        >
           Créer, configurer et plannifier vos évenements facilement et
           rapidement
-        </Text>
+        </Animated.Text>
       </View>
 
-      <View className="py-8">
+      <Animated.View
+        className="py-8"
+        entering={FadeInDown.duration(300).delay(300)}
+      >
         <TouchableOpacity className="bg-primary mx-4 rounded-xl h-14 justify-center">
           <Text className="text-center font-nunito-semibold text-lg">
             Ajouter un évènement
@@ -27,10 +42,10 @@ const Onboarding = () => {
         </TouchableOpacity>
         <TouchableOpacity className="border mx-4 my-8 rounded-xl h-14 justify-center">
           <Text className="text-center font-nunito-semibold text-lg">
-            Voir une demo
+            Voir une démo
           </Text>
         </TouchableOpacity>
-      </View>
+      </Animated.View>
     </ScrollView>
   );
 };
