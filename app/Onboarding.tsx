@@ -1,4 +1,5 @@
 import { Button } from "@/components/shared/Button";
+import { router } from "expo-router";
 import React from "react";
 import { Text, Image, ScrollView, View, TouchableOpacity } from "react-native";
 import Animated, {
@@ -36,7 +37,7 @@ const Onboarding = () => {
         className="py-8 px-4 gap-8"
         entering={FadeInDown.duration(300).delay(300)}
       >
-        <Button>
+        <Button onPress={() => router.navigate("/(root)/CreateEvent")}>
           <Text className="text-center font-nunito-semibold text-lg">
             Ajouter un évènement
           </Text>
