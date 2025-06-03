@@ -1,18 +1,15 @@
-import React, { FC } from "react";
-import { SafeAreaView, StyleSheet, Text } from "react-native";
+import { Redirect } from "expo-router";
+import React from "react";
+import { SafeAreaView } from "react-native";
 
 // interface Props {}
 
 const Index = () => {
   return (
-    <SafeAreaView style={styles.container}>
-      <Text>Hello world!</Text>
+    <SafeAreaView>
+      <Redirect href={"/Onboarding"} />
     </SafeAreaView>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {},
-});
 
 export default Index;
