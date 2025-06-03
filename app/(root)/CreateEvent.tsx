@@ -32,6 +32,7 @@ const CreateEvent = () => {
           placeholder="Nom de l'évenement"
           className="px-4 text-2xl font-cabin-bold"
           multiline
+          autoFocus
         />
       </Animated.View>
       <Animated.ScrollView
