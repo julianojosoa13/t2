@@ -12,11 +12,12 @@ import Animated, {
   FadeInUp,
   FadeOutDown,
 } from "react-native-reanimated";
+import { router } from "expo-router";
 
 const bgColor = "#EFEFEF";
 const fgColor = "#828282";
 
-const CreateEvent = () => {
+const Page1 = () => {
   return (
     <SafeAreaView className="bg-primary flex-1">
       <Header title="" backTo="" />
@@ -187,6 +188,7 @@ const CreateEvent = () => {
         />
         <Ripple
           className={`bg-primary w-16 h-16 rounded-full items-center justify-center absolute bottom-0 right-0 mb-14 mr-2 overflow-hidden`}
+          onPress={() => router.navigate("/CreateEvent/Page2")}
         >
           <Entypo name="chevron-thin-right" size={20} color={"#303338"} />
         </Ripple>
@@ -195,4 +197,4 @@ const CreateEvent = () => {
   );
 };
 
-export default CreateEvent;
+export default Page1;
