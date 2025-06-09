@@ -25,6 +25,7 @@
     "expo": "53.0.11",
     "expo-application": "~6.1.4",
     "expo-blur": "~14.1.5",
+    "expo-calendar": "~14.1.4",
     "expo-constants": "~17.1.6",
     "expo-device": "~7.1.4",
     "expo-font": "~13.3.1",
@@ -58,14 +59,14 @@
     "react-native-screens": "~4.11.1",
     "react-native-simple-toast": "^3.3.2",
     "react-native-svg": "15.11.2",
+    "react-native-switch-toggle": "^2.2.1",
     "react-native-toast-message": "^2.3.0",
     "react-native-ui-datepicker": "^3.1.2",
     "react-native-web": "~0.20.0",
     "react-native-webview": "13.13.5",
     "react-redux": "^9.2.0",
     "tailwindcss": "^3.4.17",
-    "zeego": "^3.0.6",
-    "expo-calendar": "~14.1.4"
+    "zeego": "^3.0.6"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",

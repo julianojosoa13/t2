@@ -6,6 +6,7 @@ import Animated, {
   FadeInDown,
   FadeInLeft,
   FadeInUp,
+  SlideInDown,
 } from "react-native-reanimated";
 
 const Onboarding = () => {
@@ -13,7 +14,7 @@ const Onboarding = () => {
     <ScrollView showsVerticalScrollIndicator={false} className="">
       <View className="bg-primary-100 py-4">
         <Animated.Image
-          entering={FadeInLeft.delay(150).duration(500).stiffness(5)}
+          entering={SlideInDown.delay(500).duration(1000).springify()}
           className="w-full h-[500]"
           resizeMode="contain"
           source={require("@/assets/images/onboardingImage.png")}
