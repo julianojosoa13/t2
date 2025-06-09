@@ -7,6 +7,7 @@ import Animated, {
   FadeInLeft,
   FadeInUp,
   SlideInDown,
+  SlideInUp,
 } from "react-native-reanimated";
 
 const Onboarding = () => {
@@ -14,7 +15,7 @@ const Onboarding = () => {
     <ScrollView showsVerticalScrollIndicator={false} className="">
       <View className="bg-primary-100 py-4">
         <Animated.Image
-          entering={SlideInDown.delay(500).duration(1000).springify()}
+          entering={SlideInDown.delay(450).duration(1000).springify()}
           className="w-full h-[500]"
           resizeMode="contain"
           source={require("@/assets/images/onboardingImage.png")}
@@ -27,7 +28,7 @@ const Onboarding = () => {
         </Animated.Text>
         <Animated.Text
           className="text-center mx-12 font-sm font-nunito"
-          entering={FadeInDown}
+          entering={FadeInDown.delay(150)}
         >
           Créer, configurer et plannifier vos évenements facilement et
           rapidement
