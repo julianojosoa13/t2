@@ -1,11 +1,5 @@
 import { Header } from "@/components/shared/Header";
 import { Image, SafeAreaView, Text, TextInput, View } from "react-native";
-import {
-  MaterialIcons,
-  Entypo,
-  AntDesign,
-  MaterialCommunityIcons,
-} from "@expo/vector-icons";
 import Ripple from "react-native-material-ripple";
 import Animated, {
   FadeInDown,
@@ -13,6 +7,13 @@ import Animated, {
   FadeOutDown,
 } from "react-native-reanimated";
 import { router } from "expo-router";
+
+import CalendarEdit from "@/assets/icons/CalendarEdit";
+import Clock from "@/assets/icons/Clock";
+import LocationTick from "@/assets/icons/LocationTick";
+import Check from "@/assets/icons/Check";
+import Star from "@/assets/icons/Star";
+import ChevronRight from "@/assets/icons/ChevronRight";
 
 const bgColor = "#EFEFEF";
 const fgColor = "#828282";
@@ -41,12 +42,12 @@ const Page1 = () => {
         >
           <View className="flex flex-row justify-between items-center bg-[#EFEFEF] flex-1">
             <View className="flex-row items-center gap-2">
-              <AntDesign name="staro" size={20} color={fgColor} />
+              <Star />
               <Text className="font-cabin text-[#828282]">
                 Type d{"'"}évènement
               </Text>
             </View>
-            <Entypo name="chevron-thin-right" size={20} color={fgColor} />
+            <ChevronRight />
           </View>
         </Ripple>
 
@@ -57,7 +58,7 @@ const Page1 = () => {
             className={`bg-[${bgColor}] flex-1 rounded-2xl p-2 overflow-hidden`}
           >
             <View className="flex-row items-center gap-2">
-              <MaterialIcons name="edit-calendar" size={20} color={fgColor} />
+              <CalendarEdit />
               <Text className={`text-[${bgColor}] font-cabin text-xs`}>
                 Début
               </Text>
@@ -81,13 +82,13 @@ const Page1 = () => {
 
             <View className="flex-row items-center justify-between">
               <View className="flex-row items-center gap-2">
-                <AntDesign name="clockcircleo" size={18} color={fgColor} />
+                <Clock />
                 <Text className={`text-[${fgColor}] font-cabin-semibold`}>
                   22h
                 </Text>
               </View>
 
-              <Entypo name="chevron-thin-right" size={20} color={fgColor} />
+              <ChevronRight />
             </View>
           </Ripple>
 
@@ -95,7 +96,7 @@ const Page1 = () => {
             className={`bg-[${bgColor}] flex-1 rounded-2xl p-2 overflow-hidden`}
           >
             <View className="flex-row items-center gap-2">
-              <MaterialIcons name="edit-calendar" size={20} color={fgColor} />
+              <CalendarEdit />
               <Text className={`text-[${bgColor}] font-cabin text-xs`}>
                 Fin
               </Text>
@@ -119,13 +120,13 @@ const Page1 = () => {
 
             <View className="flex-row items-center justify-between">
               <View className="flex-row items-center gap-2">
-                <AntDesign name="clockcircleo" size={18} color={fgColor} />
+                <Clock />
                 <Text className={`text-[${fgColor}] font-cabin-semibold`}>
                   22h
                 </Text>
               </View>
 
-              <Entypo name="chevron-thin-right" size={20} color={fgColor} />
+              <ChevronRight />
             </View>
           </Ripple>
         </View>
@@ -139,7 +140,7 @@ const Page1 = () => {
             className={`bg-primary-100 w-5/12 h-12 overflow-hidden rounded-xl justify-center`}
           >
             <View className="flex-row items-center px-4 gap-2">
-              <AntDesign name="check" color="#2C7D4E" size={18} />
+              <Check />
               <Text
                 className={`font-nunito-semibold text-[16px] text-primary-300`}
               >
@@ -165,21 +166,18 @@ const Page1 = () => {
 
         <Ripple
           className={`bg-[${bgColor}] px-4 h-12 justify-center rounded-full overflow-hidden`}
+          onPress={() => router.navigate("/CreateEvent/SelectAdress")}
         >
           <View className="flex flex-row justify-between items-center bg-[#EFEFEF] flex-1">
             <View className="flex-row items-center gap-2">
-              <MaterialCommunityIcons
-                name="map-marker-check-outline"
-                size={22}
-                color={fgColor}
-              />
+              <LocationTick />
 
               <Text className="font-cabin text-[#828282]">
                 Ajouter une adresse
               </Text>
             </View>
 
-            <Entypo name="chevron-thin-right" size={20} color={fgColor} />
+            <ChevronRight />
           </View>
         </Ripple>
         <Image
@@ -190,7 +188,7 @@ const Page1 = () => {
           className={`bg-primary w-16 h-16 rounded-full items-center justify-center absolute bottom-0 right-0 mb-14 mr-2 overflow-hidden`}
           onPress={() => router.navigate("/CreateEvent/Page2")}
         >
-          <Entypo name="chevron-thin-right" size={20} color={"#303338"} />
+          <ChevronRight strokeWidth={2} color="#303338" />
         </Ripple>
       </Animated.ScrollView>
     </SafeAreaView>

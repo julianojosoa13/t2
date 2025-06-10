@@ -43,12 +43,12 @@ function App() {
 
   if (loaded)
     return (
-      <>
+      <GestureHandlerRootView>
         <Stack screenOptions={{ headerShown: false }}>
           <Stack.Screen name="index" />
           <Stack.Screen name="Onboarding" />
         </Stack>
-      </>
+      </GestureHandlerRootView>
     );
 }
 export default App;
