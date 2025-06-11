@@ -1,6 +1,6 @@
 import Svg, { Path } from "react-native-svg";
 
-const Star = ({
+const StarIcon = ({
   width = 16,
   height = 16,
 }: {
@@ -22,4 +22,4 @@ const Star = ({
   </Svg>
 );
 
-export default Star;
+export default StarIcon;

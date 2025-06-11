@@ -1,6 +1,6 @@
 import Svg, { Path } from "react-native-svg";
 
-const Check = ({
+const CheckIcon = ({
   width = 15,
   height = 14,
 }: {
@@ -17,4 +17,4 @@ const Check = ({
   </Svg>
 );
 
-export default Check;
+export default CheckIcon;

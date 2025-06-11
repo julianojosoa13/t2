@@ -1,6 +1,6 @@
 import Svg, { Path } from "react-native-svg";
 
-const Clock = ({
+const ClockIcon = ({
   width = 20,
   height = 20,
 }: {
@@ -25,4 +25,4 @@ const Clock = ({
   </Svg>
 );
 
-export default Clock;
+export default ClockIcon;

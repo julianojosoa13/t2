@@ -9,7 +9,7 @@ import Animated, {
 } from "react-native-reanimated";
 import { router } from "expo-router";
 import SwitchToggle from "react-native-switch-toggle";
-import ChevronRight from "@/assets/icons/ChevronRight";
+import ChevronRightIcon from "@/assets/icons/ChevronRightIcon";
 
 const Page2 = () => {
   const [switchOn, setSwitchOn] = useState(false);
@@ -93,7 +93,7 @@ const Page2 = () => {
         <Ripple
           className={`bg-primary w-16 h-16 rounded-full items-center justify-center absolute bottom-0 right-0 mb-14 mr-2 overflow-hidden`}
         >
-          <ChevronRight strokeWidth={2} color="#303338" />
+          <ChevronRightIcon strokeWidth={2} color="#303338" />
         </Ripple>
       </Animated.ScrollView>
     </View>

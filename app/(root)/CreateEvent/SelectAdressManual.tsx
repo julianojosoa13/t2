@@ -13,6 +13,7 @@ import { useCallback, useEffect, useRef } from "react";
 import RotateLeftIcon from "@/assets/icons/RotateLeftIcon";
 import AddIcon from "@/assets/icons/AddIcon";
 import { Button } from "@/components/shared/Button";
+import MapIcon from "@/assets/icons/MapIcon";
 
 const KeyboardListener = ({ onKeyboardShow }: any) => {
   useEffect(() => {
@@ -34,7 +35,7 @@ const KeyboardListener = ({ onKeyboardShow }: any) => {
   return null; // This component doesn't render anything
 };
 
-const SelectAdress = () => {
+const SelectAdressManual = () => {
   const bottomSheetRef = useRef<BottomSheet>(null);
 
   // callbacks
@@ -56,20 +57,20 @@ const SelectAdress = () => {
       <View className="realtive top-8 px-4 z-10 flex-row items-center justify-between w-full">
         <Ripple
           className="w-12 h-12 rounded-full bg-[rgba(255,255,255,0.825)] shadow-xl items-center justify-center overflow-hidden"
-          onPress={() => router.back()}
+          onPress={() => router.replace("/(root)/CreateEvent/SelectAdress")}
         >
           <ChevronLeftIcon width={20} height={20} />
         </Ripple>
         <Ripple
           className="bg-white rounded-rull px-2 rounded-full overflow-hidden flex-row items-center gap-0"
           onPress={() => {
-            Keyboard.dismiss();
             bottomSheetRef.current?.collapse();
-            router.replace("/(root)/CreateEvent/SelectAdressManual");
+            Keyboard.dismiss();
+            router.replace("/(root)/CreateEvent/SelectAdress");
           }}
         >
-          <QuestionRoundedFillIcon width={17} height={18} />
-          <Text className="text-center m-2">Adresse non trouvé</Text>
+          <MapIcon />
+          <Text className="text-center m-2">Explorer sur la carte</Text>
         </Ripple>
       </View>
       <MapView
@@ -97,28 +98,32 @@ const SelectAdress = () => {
         onChange={handleSheetChanges}
         snapPoints={["55%", "85%"]}
       >
-        <BottomSheetView className="flex-1 min-h-[200px]">
+        <BottomSheetView className="flex-1 min-h-[200px] pb-32">
           <View className="h-full w-full-4 p-4">
-            <View className="rounded-full bg-gray-100 px-4 py-0 flex-row items-center gap-2">
-              <KeyboardListener onKeyboardShow={handleKeyboardShow} />
-              <SearchIcon />
-              <TextInput
-                placeholder="Rechercher un emplacement..."
-                className="font-nunito-semibold"
-                onBlur={() => bottomSheetRef.current?.collapse()}
-              />
+            <View className="flex-row items-center gap-2">
+              <View className="rounded-full bg-gray-100 px-4 py-0 flex-row items-center gap-2 flex-1">
+                <KeyboardListener onKeyboardShow={handleKeyboardShow} />
+                <SearchIcon />
+                <TextInput
+                  autoFocus
+                  placeholder="Rechercher un emplacement..."
+                  className="font-nunito-semibold"
+                  onBlur={() => bottomSheetRef.current?.collapse()}
+                />
+              </View>
+
+              <Ripple className="rounded-full bg-gray-100 px-4 py-0 justify-center items-center w-12 h-12 overflow-hidden">
+                <AddIcon />
+              </Ripple>
             </View>
 
-            <Text className="font-cabin-bold mt-2">Vos adresses récentes</Text>
+            <Text className="font-cabin-bold mt-2">Vos adresses manuelles</Text>
 
             <Ripple className="mx-2 my-2 p-2 gap-3 flex-row items-center justify-between">
               <RotateLeftIcon />
               <View className="flex-1">
-                <Text className="font-nunito-semibold">
+                <Text className="font-nunito-semibold text-[13px]">
                   Bar Le Sterneum, Djadjo, Abomey-Calavi
-                </Text>
-                <Text className="font-nunito-semibold text-sm opacity-50">
-                  Coordonnées disponibles
                 </Text>
               </View>
               <AddIcon />
@@ -126,16 +131,12 @@ const SelectAdress = () => {
             <Ripple className="mx-2 my-2 p-2 gap-3 flex-row items-center justify-between">
               <RotateLeftIcon />
               <View className="flex-1">
-                <Text className="font-nunito-semibold">
+                <Text className="font-nunito-semibold text-[13px]">
                   Place le Renouveau, Godomey
-                </Text>
-                <Text className="font-nunito-semibold text-sm opacity-50">
-                  Adresse manuelle
                 </Text>
               </View>
               <AddIcon />
             </Ripple>
-            <Button disabled>Enrégistrer</Button>
           </View>
         </BottomSheetView>
       </BottomSheet>
@@ -143,4 +144,4 @@ const SelectAdress = () => {
   );
 };
 
-export default SelectAdress;
+export default SelectAdressManual;

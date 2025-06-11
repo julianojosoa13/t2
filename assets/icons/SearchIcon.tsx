@@ -1,7 +1,7 @@
 import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 
-const Search = ({
+const SearchIcon = ({
   width = 20,
   height = 20,
 }: {
@@ -42,4 +42,4 @@ const Search = ({
   </Svg>
 );
 
-export default Search;
+export default SearchIcon;

@@ -1,6 +1,6 @@
 import Svg, { Path } from "react-native-svg";
 
-const QuestionRoundedFill = ({
+const QuestionRoundedFillIcon = ({
   width = 17,
   height = 18,
 }: {
@@ -26,4 +26,4 @@ const QuestionRoundedFill = ({
   );
 };
 
-export default QuestionRoundedFill;
+export default QuestionRoundedFillIcon;

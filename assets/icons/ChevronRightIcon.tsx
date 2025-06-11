@@ -1,9 +1,8 @@
 import Svg, { Path } from "react-native-svg";
-
-const ChevronLeft = ({
-  width = 20,
-  height = 20,
-  color = "#303338",
+const ChevronRightIcon = ({
+  width = 8,
+  height = 15,
+  color = "#828282",
   strokeWidth = 1.5,
 }: {
   width?: number;
@@ -11,16 +10,16 @@ const ChevronLeft = ({
   color?: string;
   strokeWidth?: number;
 }) => (
-  <Svg width={width} height={height} fill="none" viewBox="0 0 20 20">
+  <Svg width={width} height={height} fill="none" viewBox="0 0 8 15">
     <Path
       stroke={color}
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeMiterlimit="10"
       strokeWidth={strokeWidth}
-      d="m12.5 16.6-5.433-5.433a1.655 1.655 0 0 1 0-2.334L12.5 3.4"
+      d="m1.677 13.44 4.89-4.89a1.49 1.49 0 0 0 0-2.1l-4.89-4.89"
     ></Path>
   </Svg>
 );
 
-export default ChevronLeft;
+export default ChevronRightIcon;

@@ -1,6 +1,6 @@
 import Svg, { Path } from "react-native-svg";
 
-const CalendarEdit = ({
+const CalendarEditIcon = ({
   width = 20,
   height = 20,
 }: {
@@ -34,4 +34,4 @@ const CalendarEdit = ({
   </Svg>
 );
 
-export default CalendarEdit;
+export default CalendarEditIcon;

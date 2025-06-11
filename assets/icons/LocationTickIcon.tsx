@@ -1,6 +1,6 @@
 import Svg, { Path } from "react-native-svg";
 
-const LocationTick = ({
+const LocationTickIcon = ({
   width = 18,
   height = 18,
 }: {
@@ -33,4 +33,4 @@ const LocationTick = ({
   </Svg>
 );
 
-export default LocationTick;
+export default LocationTickIcon;
