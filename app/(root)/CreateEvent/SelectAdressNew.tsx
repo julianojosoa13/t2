@@ -15,27 +15,7 @@ import AddIcon from "@/assets/icons/AddIcon";
 import { Button } from "@/components/shared/Button";
 import MapIcon from "@/assets/icons/MapIcon";
 
-const KeyboardListener = ({ onKeyboardShow }: any) => {
-  useEffect(() => {
-    // Add keyboard did show listener
-    const keyboardDidShowListener = Keyboard.addListener(
-      "keyboardDidShow",
-      (event) => {
-        // Execute the provided function with keyboard height and duration
-        onKeyboardShow(event);
-      }
-    );
-
-    // Clean up the listener when component unmounts
-    return () => {
-      keyboardDidShowListener.remove();
-    };
-  }, [onKeyboardShow]); // Re-run effect if onKeyboardShow changes
-
-  return null; // This component doesn't render anything
-};
-
-const SelectAdressManual = () => {
+const SelectAdressNew = () => {
   const bottomSheetRef = useRef<BottomSheet>(null);
 
   // callbacks
@@ -43,21 +23,14 @@ const SelectAdressManual = () => {
     console.log("handleSheetChanges", index);
   }, []);
 
-  const handleKeyboardShow = (event: any) => {
-    console.log("Keyboard appeared!", {
-      height: event.endCoordinates.height,
-      duration: event.duration,
-    });
-    // Add your custom logic here
-    bottomSheetRef.current?.snapToIndex(2);
-  };
-
   return (
     <KeyboardAvoidingScrollView contentContainerClassName="flex-1 justify-between">
       <View className="realtive top-8 px-4 z-10 flex-row items-center justify-between w-full">
         <Ripple
           className="w-12 h-12 rounded-full bg-[rgba(255,255,255,0.825)] shadow-xl items-center justify-center overflow-hidden"
-          onPress={() => router.back()}
+          onPress={() =>
+            router.replace("/(root)/CreateEvent/SelectAdressManual")
+          }
         >
           <ChevronLeftIcon width={20} height={20} />
         </Ripple>
@@ -98,50 +71,15 @@ const SelectAdressManual = () => {
         onChange={handleSheetChanges}
         snapPoints={["55%", "85%"]}
       >
-        <BottomSheetView className="flex-1 min-h-[200px] pb-32">
-          <View className="h-full w-full-4 p-4">
-            <View className="flex-row items-center gap-2">
-              <View className="rounded-full bg-gray-100 px-4 py-0 flex-row items-center gap-2 flex-1">
-                <KeyboardListener onKeyboardShow={handleKeyboardShow} />
-                <SearchIcon />
-                <TextInput
-                  autoFocus
-                  placeholder="Rechercher un emplacement..."
-                  className="font-nunito-semibold"
-                  onBlur={() => bottomSheetRef.current?.collapse()}
-                />
+        <BottomSheetView className="flex-1 min-h-[200px] pb-8">
+          <View className="h-full w-full-4 p-4 justify-between">
+            <KeyboardAvoidingScrollView></KeyboardAvoidingScrollView>
+            <Button>
+              <View className="flex-row items-center justify-center gap-2">
+                <Text>Ajouter</Text>
+                <AddIcon color="#303338" strokeWidth="2" />
               </View>
-
-              <Ripple
-                className="rounded-full bg-gray-100 px-4 py-0 justify-center items-center w-12 h-12 overflow-hidden"
-                onPress={() =>
-                  router.replace("/(root)/CreateEvent/SelectAdressNew")
-                }
-              >
-                <AddIcon />
-              </Ripple>
-            </View>
-
-            <Text className="font-cabin-bold mt-2">Vos adresses manuelles</Text>
-
-            <Ripple className="mx-2 my-2 p-2 gap-3 flex-row items-center justify-between">
-              <RotateLeftIcon />
-              <View className="flex-1">
-                <Text className="font-nunito-semibold text-[13px]">
-                  Bar Le Sterneum, Djadjo, Abomey-Calavi
-                </Text>
-              </View>
-              <AddIcon />
-            </Ripple>
-            <Ripple className="mx-2 my-2 p-2 gap-3 flex-row items-center justify-between">
-              <RotateLeftIcon />
-              <View className="flex-1">
-                <Text className="font-nunito-semibold text-[13px]">
-                  Place le Renouveau, Godomey
-                </Text>
-              </View>
-              <AddIcon />
-            </Ripple>
+            </Button>
           </View>
         </BottomSheetView>
       </BottomSheet>
@@ -149,4 +87,4 @@ const SelectAdressManual = () => {
   );
 };
 
-export default SelectAdressManual;
+export default SelectAdressNew;
