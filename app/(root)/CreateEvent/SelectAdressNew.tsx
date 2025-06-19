@@ -1,5 +1,4 @@
 import ChevronLeftIcon from "@/assets/icons/ChevronLeftIcon";
-import QuestionRoundedFillIcon from "@/assets/icons/QuestionRoundedFillIcon";
 import SearchIcon from "@/assets/icons/SearchIcon";
 import { router } from "expo-router";
 import {
@@ -8,7 +7,6 @@ import {
   TextInput,
   StyleSheet,
   Keyboard,
-  ScrollView,
   Modal,
 } from "react-native";
 import MapView, { Marker, UrlTile } from "react-native-maps";
@@ -22,6 +20,7 @@ import RotateLeftIcon from "@/assets/icons/RotateLeftIcon";
 import AddIcon from "@/assets/icons/AddIcon";
 import { Button } from "@/components/shared/Button";
 import MapIcon from "@/assets/icons/MapIcon";
+import Animated, { SlideInDown } from "react-native-reanimated";
 
 const SelectAdressNew = () => {
   const bottomSheetRef = useRef<BottomSheet>(null);
@@ -75,15 +74,25 @@ const SelectAdressNew = () => {
         />
       </MapView>
 
-      <Modal className="flex-1 min-h-[200px] max-h-[85%] pb-8 px-4">
-        <Text className="font-cabin-bold text-primary text-xl">
-          Lieu de l’évenement
-        </Text>
-        <Text className="text-xs font-nunito">
-          Donner une localisation précise du lieu de l’évenement à vos cliens
-          afin de mieux les orienter
-        </Text>
-        <KeyboardAvoidingScrollView>
+      {/* <Modal className="flex-1 min-h-[200px] max-h-[85%] pb-8 px-4" transparent> */}
+      <Animated.View
+        entering={SlideInDown}
+        className="h-[85%] absolute bottom-0 pb-8 px-4 rounded-t-xl overflow-hidden pt-2 bg-white"
+      >
+        <View className="self-center mb-2 h-1 w-8 rounded-full bg-dark"></View>
+        <KeyboardAvoidingScrollView
+          contentContainerStyle={{ paddingBottom: 50 }}
+          showsVerticalScrollIndicator={false}
+        >
+          <Text className="font-cabin-bold text-primary text-xl mt-4">
+            Lieu de l’évenement
+          </Text>
+          <Text className="text-xs font-nunito">
+            Donner une localisation précise du lieu de l’évenement à vos cliens
+            afin de mieux les orienter
+          </Text>
+
+          {/* Nom de l'emplacement */}
           <Text className="mt-4 font-nunito-semibold text-sm text-dark-secondary">
             Nom de l&apos;emplacement
           </Text>
@@ -93,77 +102,66 @@ const SelectAdressNew = () => {
             placeholder="Entrer le nom de l'emplacement"
           />
 
+          {/* Quartier  */}
+
           <Text className="mt-4 font-nunito-semibold text-sm text-dark-secondary">
-            Nom de l&apos;emplacement
+            Quartier
           </Text>
 
           <TextInput
             className="bg-gray-150 my-2 rounded-xl px-4 font-nunito-semibold text-lg"
-            placeholder="Entrer le nom de l'emplacement"
+            placeholder="Entrer le nom du quartiert"
           />
 
+          {/* Commune */}
           <Text className="mt-4 font-nunito-semibold text-sm text-dark-secondary">
-            Nom de l&apos;emplacement
+            Commune
           </Text>
 
           <TextInput
             className="bg-gray-150 my-2 rounded-xl px-4 font-nunito-semibold text-lg"
-            placeholder="Entrer le nom de l'emplacement"
+            placeholder="Entrer le nom de la commune"
           />
 
+          {/* Ville */}
           <Text className="mt-4 font-nunito-semibold text-sm text-dark-secondary">
-            Nom de l&apos;emplacement
+            Ville
           </Text>
 
           <TextInput
             className="bg-gray-150 my-2 rounded-xl px-4 font-nunito-semibold text-lg"
-            placeholder="Entrer le nom de l'emplacement"
+            placeholder="Entrer le nom de la ville"
           />
 
+          {/* Departement */}
+
           <Text className="mt-4 font-nunito-semibold text-sm text-dark-secondary">
-            Nom de l&apos;emplacement
+            Nom du departement
           </Text>
 
           <TextInput
             className="bg-gray-150 my-2 rounded-xl px-4 font-nunito-semibold text-lg"
-            placeholder="Entrer le nom de l'emplacement"
+            placeholder="Entrer le nom du departement"
           />
 
           <Text className="mt-4 font-nunito-semibold text-sm text-dark-secondary">
-            Nom de l&apos;emplacement
+            Description supplémentaire
           </Text>
 
           <TextInput
             className="bg-gray-150 my-2 rounded-xl px-4 font-nunito-semibold text-lg"
-            placeholder="Entrer le nom de l'emplacement"
+            placeholder={`Ajouter une description qui permettra aux participants  de facilement s’oienter dans la  pour atteindre le lieu de votre évenement`}
+            multiline
           />
-
-          <Text className="mt-4 font-nunito-semibold text-sm text-dark-secondary">
-            Nom de l&apos;emplacement
-          </Text>
-
-          <TextInput
-            className="bg-gray-150 my-2 rounded-xl px-4 font-nunito-semibold text-lg"
-            placeholder="Entrer le nom de l'emplacement"
-          />
-
-          <Text className="mt-4 font-nunito-semibold text-sm text-dark-secondary">
-            Nom de l&apos;emplacement
-          </Text>
-
-          <TextInput
-            className="bg-gray-150 my-2 rounded-xl px-4 font-nunito-semibold text-lg"
-            placeholder="Entrer le nom de l'emplacement"
-          />
-
-          <Button>
-            <View className="flex-row items-center justify-center gap-2">
-              <Text>Ajouter</Text>
-              <AddIcon color="#303338" strokeWidth="2" />
-            </View>
-          </Button>
         </KeyboardAvoidingScrollView>
-      </Modal>
+        <Button>
+          <View className="flex-row items-center justify-center gap-2">
+            <Text>Ajouter</Text>
+            <AddIcon color="#303338" strokeWidth="2" />
+          </View>
+        </Button>
+      </Animated.View>
+      {/* </Modal> */}
     </KeyboardAvoidingScrollView>
   );
 };
