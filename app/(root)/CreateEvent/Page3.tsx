@@ -13,6 +13,7 @@ import Animated, { FadeInDown, FadeOutDown } from "react-native-reanimated";
 import GaleryImageIcon from "@/assets/icons/GaleryImageIcon";
 import AddIcon from "@/assets/icons/AddIcon";
 import PictureFrameIcon from "@/assets/icons/PictureFrameIcon";
+import { router } from "expo-router";
 
 const Page3 = () => {
   return (
@@ -21,9 +22,10 @@ const Page3 = () => {
 
       <View className="absolute top-10 right-4">
         <Ripple
-          className={
-            "bg-white rounded-full h-10 px-5 items-center justify-center overflow-hidden"
-          }
+          className="bg-white rounded-full h-10 px-5 items-center justify-center overflow-hidden"
+          onPress={() => {
+            router.navigate("/(root)/CreateEvent/Page4");
+          }}
         >
           <Text>Enreg. et ontinuer</Text>
         </Ripple>
