@@ -92,6 +92,7 @@ const Page2 = () => {
         />
         <Ripple
           className={`bg-primary w-16 h-16 rounded-full items-center justify-center absolute bottom-0 right-0 mb-14 mr-2 overflow-hidden`}
+          onPress={() => router.navigate("/(root)/CreateEvent/Page3")}
         >
           <ChevronRightIcon strokeWidth={2} color="#303338" />
         </Ripple>
