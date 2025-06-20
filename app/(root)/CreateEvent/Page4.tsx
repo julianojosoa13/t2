@@ -28,6 +28,7 @@ import FreePartyType from "@/components/shared/FreePartyType";
 import PayedEventNoTicketType from "@/components/shared/PayedEventNoTicketType";
 import IllustrationImage from "@/assets/icons/IllustrationImage";
 import SwitchToggle from "react-native-switch-toggle";
+import CreateTicketModal from "@/components/modals/CreateTicketModal";
 
 export type ParticipationType = "payant" | "gratuit";
 
@@ -37,6 +38,7 @@ const Page4 = () => {
     useState<ParticipationType>("payant");
   const [showModal, setShowModal] = useState(false);
   const [switchOn, setSwitchOn] = useState(false);
+  const [showCreateTicketModal, setShowCreateTicketModal] = useState(false);
 
   const selectPartyType = (partyType: ParticipationType) => {
     // hideModal();
@@ -179,7 +181,12 @@ const Page4 = () => {
             )}
           </View>
 
-          <TouchableOpacity className="bg-primary h-16 w-16 rounded-full items-center justify-center">
+          <TouchableOpacity
+            className="bg-primary h-16 w-16 rounded-full items-center justify-center"
+            onPress={() => {
+              setShowCreateTicketModal(true);
+            }}
+          >
             <AddIcon color="black" />
           </TouchableOpacity>
         </View>
@@ -254,6 +261,11 @@ const Page4 = () => {
           </View>
         </Animated.View>
       </Modal>
+
+      <CreateTicketModal
+        visible={showCreateTicketModal}
+        onRequestClose={() => setShowCreateTicketModal(false)}
+      />
     </View>
   );
 };
