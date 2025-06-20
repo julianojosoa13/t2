@@ -13,23 +13,40 @@ import React, { useState } from "react";
 import { Header } from "@/components/shared/Header";
 import Ripple from "react-native-material-ripple";
 import Animated, {
+  FadeIn,
   FadeInDown,
   FadeOutDown,
-  SlideInDown,
 } from "react-native-reanimated";
-import GaleryImageIcon from "@/assets/icons/GaleryImageIcon";
 import AddIcon from "@/assets/icons/AddIcon";
-import PictureFrameIcon from "@/assets/icons/PictureFrameIcon";
 import { router } from "expo-router";
 import ChevronDownIcon from "@/assets/icons/ChevronDownIcon";
-import ChevronRightIcon from "@/assets/icons/ChevronRightIcon";
 import TicketIcon from "@/assets/icons/TicketIcon";
 import TicketSmallIcon from "@/assets/icons/TicketSmallIcon";
 import CheckIcon from "@/assets/icons/CheckIcon";
+import PayedPartyType from "@/components/shared/PayedPartyType";
+import FreePartyType from "@/components/shared/FreePartyType";
+import PayedEventNoTicketType from "@/components/shared/PayedEventNoTicketType";
+import IllustrationImage from "@/assets/icons/IllustrationImage";
+import SwitchToggle from "react-native-switch-toggle";
+
+export type ParticipationType = "payant" | "gratuit";
 
 const Page4 = () => {
   const [showTicketType, setShowTicketType] = useState(false);
+  const [selectedPartType, setSelectedPartType] =
+    useState<ParticipationType>("payant");
   const [showModal, setShowModal] = useState(false);
+  const [switchOn, setSwitchOn] = useState(false);
+
+  const selectPartyType = (partyType: ParticipationType) => {
+    // hideModal();
+    setSelectedPartType(partyType);
+  };
+
+  const toggleShowModal = () => setShowModal(true);
+
+  const hideModal = () => setShowModal(false);
+
   return (
     <View className="bg-primary flex-1">
       <Header title="Festival du Lust" backTo="" />
@@ -55,68 +72,111 @@ const Page4 = () => {
         showsVerticalScrollIndicator={false}
         contentContainerClassName="flex flex-1"
       >
-        {showTicketType ? (
+        {selectedPartType === "payant" ? (
           <View>
-            <View className="flex-row items-center py-5 gap-2">
-              <View className="items-center justify-center px-5">
-                <TicketSmallIcon />
-              </View>
-              <View className="flex-grow">
-                <Text className="font-cabin-bold text-xl">Ticket Groupe</Text>
-                <Text className="font-nunito">Ticket Groupe</Text>
-              </View>
-              <Text className="font-cabin-bold text-xl">5 000 F CFA</Text>
-            </View>
+            {showTicketType ? (
+              <View>
+                <View className="flex-row items-center py-5 gap-2">
+                  <View className="items-center justify-center px-5">
+                    <TicketSmallIcon />
+                  </View>
+                  <View className="flex-grow">
+                    <Text className="font-cabin-bold text-xl">
+                      Ticket Groupe
+                    </Text>
+                    <Text className="font-nunito">Ticket Groupe</Text>
+                  </View>
+                  <Text className="font-cabin-bold text-xl">5 000 F CFA</Text>
+                </View>
 
-            <View className="flex-row items-center py-5 gap-2">
-              <View className="items-center justify-center px-5">
-                <TicketSmallIcon color="#f4cf5f" />
+                <View className="flex-row items-center py-5 gap-2">
+                  <View className="items-center justify-center px-5">
+                    <TicketSmallIcon color="#f4cf5f" />
+                  </View>
+                  <View className="flex-grow">
+                    <Text className="font-cabin-bold text-xl">
+                      Ticket Standard
+                    </Text>
+                    <Text className="font-nunito">Ticket Standar</Text>
+                  </View>
+                  <Text className="font-cabin-bold text-xl">3 000 F CFA</Text>
+                </View>
               </View>
-              <View className="flex-grow">
-                <Text className="font-cabin-bold text-xl">Ticket Standard</Text>
-                <Text className="font-nunito">Ticket Standar</Text>
-              </View>
-              <Text className="font-cabin-bold text-xl">3 000 F CFA</Text>
-            </View>
+            ) : (
+              <PayedEventNoTicketType
+                addTicketAction={() => {
+                  setShowTicketType(true);
+                }}
+              />
+            )}
           </View>
         ) : (
-          <View className="items-center gap-4 flex-grow justify-center mb-32">
-            <TicketIcon />
-            <Text className="font-cabin-bold text-lg text-primary">
-              Ajoutez les tickets à votre évenement
-            </Text>
-            <Text className="font-nunito">
-              Vous n&apos;avez ajouter aucun ticket pour le moment.
-            </Text>
+          <View>
+            <View className="items-center my-8 gap-4">
+              <IllustrationImage />
+              <Text className="font-cabin-bold text-lg text-primary">
+                Evenenement Gratuit !
+              </Text>
+              <Text className="text-center mx-6 text-sm font-nunito-bold text-dark-secondary">
+                Vous avez configurer votre évenement sur le mode de
+                participation gratuite pour les participants. Dans ce mode nous
+                vous facturons uniquement des frais de publication de
+                l&apos;évenement qui sont payable en 1 fois.
+              </Text>
+            </View>
+            <View className="flex-row rounded-full bg-primary-100 overflow-hidden items-center justify-between mt-2 py-2 px-4">
+              <Text className="font-cabin-semibold text-dark">
+                Frais de publication & services
+              </Text>
+              <Text className="font-cabin-bold text-xl text-dark">
+                15 000F CFA
+              </Text>
+            </View>
 
-            <Ripple
-              className="flex-row gap-2 border p-2 rounded-full border-primary overflow-hidden my-4"
-              onPress={() => {
-                setShowTicketType(true);
-              }}
-            >
-              <Text className="text-primary">Ajouter</Text>
-              <AddIcon color="#2ECC71" />
-            </Ripple>
+            <View className="flex-row items-center mt-4 gap-2 mx-2">
+              <SwitchToggle
+                switchOn={switchOn}
+                onPress={() => setSwitchOn(!switchOn)}
+                circleColorOff="#FFF"
+                circleColorOn="#FFF"
+                backgroundColorOn="#2ECC71"
+                backgroundColorOff="#E0E0E0"
+                circleStyle={{
+                  width: 24,
+                  height: 24,
+                  borderRadius: 12,
+                }}
+                containerStyle={{
+                  width: 55,
+                  height: 30,
+                  borderRadius: 15,
+                  padding: 4,
+                  paddingLeft: 0,
+                }}
+              />
+              <Text
+                className="font-nunito-semibold text-dark"
+                onPress={() => setSwitchOn(!switchOn)}
+              >
+                J&apos;accepte les termes & conditions
+              </Text>
+            </View>
           </View>
         )}
-
         <View className="absolute bottom-8 py-4 flex-row items-center gap-4 ml-2">
           <View className="flex-row items-center justify-between flex-grow">
-            <TouchableOpacity
+            <Pressable
               className="flex-row items-center gap-2"
-              onPress={() => {
-                setShowModal(true);
-              }}
+              onPress={toggleShowModal}
             >
               <Text className="font-cabin text-lg">Type de participation</Text>
               <ChevronDownIcon />
-            </TouchableOpacity>
-            <View className="bg-[##7C15FF] rounded-3xl px-6 py-1">
-              <Text className="font-nunito-bold text-white text-xs">
-                Payant
-              </Text>
-            </View>
+            </Pressable>
+            {selectedPartType === "payant" ? (
+              <PayedPartyType />
+            ) : (
+              <FreePartyType />
+            )}
           </View>
 
           <TouchableOpacity className="bg-primary h-16 w-16 rounded-full items-center justify-center">
@@ -125,28 +185,25 @@ const Page4 = () => {
         </View>
       </Animated.ScrollView>
 
-      <Modal
-        transparent
-        visible={showModal}
-        onRequestClose={() => {
-          setShowModal(false);
-        }}
-      >
+      <Modal transparent visible={showModal} onRequestClose={hideModal}>
         <Pressable
           style={{
             ...StyleSheet.absoluteFillObject,
             backgroundColor: "rgba(235,235,235,0.85)",
           }}
-          onPress={() => {
-            setShowModal(false);
-          }}
+          onPress={hideModal}
         />
         <Animated.View
           className="absolute mx-4 bottom-24  gap-4 bg-white rounded-2xl px-4 py-2 mr-24 elevation-sm max-h-1/3"
           entering={FadeInDown}
         >
-          <TouchableOpacity className="flex-row p-4 ">
-            <View className="w-10 h-10" />
+          <TouchableOpacity
+            className="flex-row p-4 "
+            onPress={() => selectPartyType("gratuit")}
+          >
+            <View className="w-10 h-10 mt-2">
+              {selectedPartType === "gratuit" && <CheckIcon color="black" />}
+            </View>
             <View className="">
               <Text className="text-xl font-cabin-bold">Gratuit</Text>
               <Text className="font-nunito mr-6" numberOfLines={5}>
@@ -157,16 +214,19 @@ const Page4 = () => {
             </View>
           </TouchableOpacity>
 
-          <TouchableOpacity className="flex-row p-4">
-            <View className="w-10 h-10 mt-4">
-              <CheckIcon color="#7C15FF" />
+          <TouchableOpacity
+            className="flex-row p-2"
+            onPress={() => selectPartyType("payant")}
+          >
+            <View className="w-10 h-10 mt-2">
+              {selectedPartType === "payant" && <CheckIcon color="#7C15FF" />}
             </View>
             <View className="">
               <Text className="text-xl font-cabin-bold text-[#7C15FF]">
                 Payant
               </Text>
               <Text className="font-nunito mr-6">
-                Evénement accessible à tous sans frais d'entrée. Les
+                Evénement accessible à tous sans frais d&apos;entrée. Les
                 participants pourront s&apos;inscrire gratuitement. Aucun ticket
                 n’est requis.
               </Text>
@@ -174,24 +234,25 @@ const Page4 = () => {
           </TouchableOpacity>
         </Animated.View>
 
-        <View className="absolute mx-4 bottom-10 flex-row items-center gap-4 bg-white rounded-full px-4 py-2 mr-[80px] elevation-sm">
+        <Animated.View
+          className="absolute mx-4 bottom-10 flex-row items-center gap-4 bg-white rounded-full px-4 py-2 mr-[80px] elevation-sm"
+          entering={FadeIn}
+        >
           <View className="flex-row items-center justify-between flex-grow">
             <TouchableOpacity
               className="flex-row items-center gap-2"
-              onPress={() => {
-                setShowModal(false);
-              }}
+              onPress={hideModal}
             >
               <Text className="font-cabin text-lg">Type de participation</Text>
               <ChevronDownIcon />
             </TouchableOpacity>
-            <View className="bg-[##7C15FF] rounded-3xl px-6 py-1">
-              <Text className="font-nunito-bold text-white text-xs">
-                Payant
-              </Text>
-            </View>
+            {selectedPartType === "payant" ? (
+              <PayedPartyType />
+            ) : (
+              <FreePartyType />
+            )}
           </View>
-        </View>
+        </Animated.View>
       </Modal>
     </View>
   );
