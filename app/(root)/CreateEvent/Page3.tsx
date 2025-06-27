@@ -1,11 +1,4 @@
-import {
-  View,
-  Text,
-  TextInput,
-  Image,
-  Switch,
-  TouchableOpacity,
-} from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import React, { useState } from "react";
 import { Header } from "@/components/shared/Header";
 import Ripple from "react-native-material-ripple";

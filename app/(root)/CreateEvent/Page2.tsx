@@ -1,4 +1,4 @@
-import { View, Text, TextInput, Image, Switch } from "react-native";
+import { View, Text, TextInput, Image } from "react-native";
 import React, { useState } from "react";
 import { Header } from "@/components/shared/Header";
 import Ripple from "react-native-material-ripple";

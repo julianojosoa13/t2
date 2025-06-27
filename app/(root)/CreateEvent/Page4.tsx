@@ -57,7 +57,7 @@ const Page4 = () => {
         <Ripple
           className="bg-white rounded-full h-10 px-5 items-center justify-center overflow-hidden"
           onPress={() => {
-            router.navigate("/(root)/CreateEvent/Page4");
+            router.navigate("/(root)/CreateEvent/Page5");
           }}
         >
           <Text>Enreg. et ontinuer</Text>
