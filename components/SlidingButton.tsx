@@ -20,14 +20,19 @@ const SlidingButton: React.FC<SlidingButtonProps> = ({ onSuccess }) => {
   const circleWidth = 64;
   const pan = useRef(new Animated.Value(0)).current;
 
+  // Resistance configuration
+  const DRAG_RESISTANCE = 0.67; // Lower = more resistance (0.1-0.9)
+  const BOUNCE_EFFECT = 0.3; // Rubber band effect at edges (0-1)
+  const VELOCITY_FACTOR = 0.05; // How much velocity affects movement
+
   // Create an animated value for the background width
   const bgWidth = pan.interpolate({
     inputRange: [0, containerWidth - circleWidth],
-    outputRange: [circleWidth, containerWidth - 8], // -8 for padding
+    outputRange: [circleWidth, containerWidth - 8],
     extrapolate: "clamp",
   });
 
-  // Create an animated value for the background opacity (fade in effect)
+  // Create an animated value for the background opacity
   const bgOpacity = pan.interpolate({
     inputRange: [0, containerWidth / 4, containerWidth - circleWidth],
     outputRange: [0, 0.8, 1],
@@ -40,18 +45,30 @@ const SlidingButton: React.FC<SlidingButtonProps> = ({ onSuccess }) => {
       _: GestureResponderEvent,
       gestureState: PanResponderGestureState
     ) => {
-      if (
-        gestureState.dx > 0 &&
-        gestureState.dx <= containerWidth - circleWidth
-      ) {
-        pan.setValue(gestureState.dx);
+      const maxDrag = containerWidth - circleWidth;
+      const rawDX = gestureState.dx;
+
+      // Apply resistance with velocity consideration
+      let resistedDX =
+        rawDX * DRAG_RESISTANCE +
+        gestureState.vx * VELOCITY_FACTOR * containerWidth;
+
+      // Add bounce effect when approaching limits
+      if (resistedDX > maxDrag) {
+        resistedDX = maxDrag + (resistedDX - maxDrag) * BOUNCE_EFFECT;
+      } else if (resistedDX < 0) {
+        resistedDX = 0 - (0 - resistedDX) * BOUNCE_EFFECT;
       }
+
+      pan.setValue(resistedDX);
     },
     onPanResponderRelease: (
       _: GestureResponderEvent,
       gestureState: PanResponderGestureState
     ) => {
-      if (gestureState.dx >= halfWayPoint) {
+      const resistedDX = gestureState.dx * DRAG_RESISTANCE;
+
+      if (resistedDX >= halfWayPoint) {
         Animated.timing(pan, {
           toValue: containerWidth - circleWidth,
           duration: 200,
@@ -60,6 +77,8 @@ const SlidingButton: React.FC<SlidingButtonProps> = ({ onSuccess }) => {
       } else {
         Animated.spring(pan, {
           toValue: 0,
+          friction: 5, // Higher = more resistance (3-10)
+          tension: 60, // Higher = snappier (40-100)
           useNativeDriver: false,
         }).start();
       }
@@ -75,6 +94,7 @@ const SlidingButton: React.FC<SlidingButtonProps> = ({ onSuccess }) => {
           width: bgWidth,
           opacity: bgOpacity,
           transform: [{ translateY: 0 }],
+          marginLeft: 1,
         }}
       />
 

@@ -7,7 +7,7 @@ import { SafeAreaView } from "react-native";
 const Index = () => {
   return (
     <SafeAreaView>
-      <Redirect href={"/Onboarding"} />
+      <Redirect href={"/(root)"} />
     </SafeAreaView>
   );
 };
