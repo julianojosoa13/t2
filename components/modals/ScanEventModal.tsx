@@ -12,6 +12,7 @@ import CloseIcon from "@/assets/icons/CloseIcon";
 import CrossIcon from "@/assets/icons/CrossIcon";
 import ScannerIcon from "@/assets/icons/ScannerIcon";
 import TicketCodeIcon from "@/assets/icons/TicketCodeIcon";
+import { Link } from "expo-router";
 
 const ScanEventModal = ({
   visible = false,
@@ -43,20 +44,28 @@ const ScanEventModal = ({
         >
           <CrossIcon />
         </TouchableOpacity>
-
-        <TouchableOpacity className="bg-[#DBDBDB] rounded-t-[30] h-16 gap-4 flex-row items-center border-b-gray border-b-2 mt-6 p-4">
-          <ScannerIcon />
-          <Text className="font-cabin text-dark text-lg">
-            Scanner le code QR
-          </Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity className="bg-[#DBDBDB] rounded-b-[30] h-16 gap-4 flex-row items-center p-4">
-          <TicketCodeIcon />
-          <Text className="font-cabin text-dark text-lg">
-            Saisir le code du ticket
-          </Text>
-        </TouchableOpacity>
+        <Link asChild href={"/Scan/ScanQRTicket"}>
+          <TouchableOpacity
+            className="bg-[#DBDBDB] rounded-t-[30] h-16 gap-4 flex-row items-center border-b-gray border-b-2 mt-6 p-4"
+            activeOpacity={0.75}
+          >
+            <ScannerIcon />
+            <Text className="font-cabin text-dark text-lg">
+              Scanner le code QR
+            </Text>
+          </TouchableOpacity>
+        </Link>
+        <Link asChild href={"/Scan/ManualTicketValidation"}>
+          <TouchableOpacity
+            className="bg-[#DBDBDB] rounded-b-[30] h-16 gap-4 flex-row items-center p-4"
+            activeOpacity={0.75}
+          >
+            <TicketCodeIcon />
+            <Text className="font-cabin text-dark text-lg">
+              Saisir le code du ticket
+            </Text>
+          </TouchableOpacity>
+        </Link>
       </Animated.View>
     </Modal>
   );

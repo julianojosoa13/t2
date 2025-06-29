@@ -29,9 +29,17 @@
         "expo-splash-screen",
         {
           "image": "./assets/images/logo-tikket.jpg",
-          "imageWidth": 200,
+          "imageWidth": 400,
           "resizeMode": "contain",
-          "backgroundColor": "#70D099"
+          "backgroundColor": "gray"
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera",
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
+          "recordAudioAndroid": true
         }
       ],
       "expo-web-browser"
