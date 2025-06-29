@@ -22,7 +22,7 @@ const ScanEventModal = ({
   onRequestClose?: () => void;
 }) => {
   return (
-    <Modal transparent visible={visible}>
+    <Modal transparent visible={visible} onRequestClose={onRequestClose}>
       <Animated.View
         entering={FadeIn}
         style={{

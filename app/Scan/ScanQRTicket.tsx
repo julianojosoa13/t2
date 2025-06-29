@@ -15,8 +15,14 @@ import PencilIcon from "@/assets/icons/PencilIcon";
 import { Link, router } from "expo-router";
 import LottieView from "lottie-react-native";
 import { useIsFocused } from "@react-navigation/native";
+import ValidTicketModal from "@/components/modals/ValidTicketModal";
+import CheckIcon from "@/assets/icons/CheckIcon";
+import InvalidTicketModal from "@/components/modals/InvalidTicketModal";
 
 const ScanQRTicket = () => {
+  const [showValidTicketModal, setShowValidTicketModal] = useState(false);
+  const [showInvalidTicketModal, setShowInvalidTicketModal] = useState(false);
+  const [randomizer, SetRandomizer] = useState(false);
   const [facing, setFacing] = useState<CameraType>("back");
   const [permission, requestPermission] = useCameraPermissions();
   const [isScanning, setIsScanning] = useState(false);
@@ -29,6 +35,12 @@ const ScanQRTicket = () => {
     if (isScanning) {
       setScannedData(scanningResult.data);
       setIsScanning(false);
+      if (randomizer) {
+        setShowValidTicketModal(true);
+      } else {
+        setShowInvalidTicketModal(true);
+      }
+      SetRandomizer(!randomizer);
       //   Alert.alert("QR Code trouvé!", scanningResult.data);
     }
   };
@@ -36,6 +48,8 @@ const ScanQRTicket = () => {
   const toggleScanning = () => {
     setScannedData(null);
     setIsScanning(!isScanning);
+    setShowValidTicketModal(false);
+    setShowInvalidTicketModal(false);
   };
 
   useEffect(() => {
@@ -81,15 +95,10 @@ const ScanQRTicket = () => {
           {/* Show success message when QR code is found */}
           {scannedData && (
             <View className="absolute top-20 bg-white/90 px-6 py-3 rounded-lg z-10 flex-row items-center gap-1">
-              <Text className="font-cabin-bold text-lg text-primary">
-                Billet trouvé!
+              <Text className="font-cabin-bold text-lg text-dark">
+                QRCode trouvé!
               </Text>
-              <LottieView
-                loop={false}
-                autoPlay
-                source={require("@/assets/lotties-animations/success.json")}
-                style={{ width: 40, height: 40 }}
-              />
+              <CheckIcon color="black" />
             </View>
           )}
           {isScanning && (
@@ -132,6 +141,14 @@ const ScanQRTicket = () => {
           </View>
         </View>
       </CameraView>
+      <ValidTicketModal
+        visible={showValidTicketModal}
+        onRequestClose={() => setShowValidTicketModal(false)}
+      />
+      <InvalidTicketModal
+        visible={showInvalidTicketModal}
+        onRequestClose={() => setShowInvalidTicketModal(false)}
+      />
     </View>
   );
 };

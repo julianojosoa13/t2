@@ -1,64 +1,25 @@
-import { Alert, Text, TextInput, View } from "react-native";
+import { Alert, Keyboard, Text, TextInput, View } from "react-native";
 import React, { useState, useRef, useEffect } from "react";
 import { Header } from "@/components/shared/Header";
 import ManualScanImage from "@/assets/icons/ManualScanImage";
 import { Button } from "@/components/shared/Button";
 import Ripple from "react-native-material-ripple";
 import { router } from "expo-router";
-
-const OTP_LENGTH = 6;
+import ValidTicketModal from "@/components/modals/ValidTicketModal";
+import { useOTP } from "@/components/hooks/useOtp";
+import InvalidTicketModal from "@/components/modals/InvalidTicketModal";
 
 const ManualTicketValidationScreen = () => {
-  const [showModal, setShowModal] = useState(false);
-  const [otp, setOtp] = useState<string[]>(Array(OTP_LENGTH).fill(""));
-  const inputs = useRef<TextInput[]>(Array(OTP_LENGTH).fill(null));
-
-  const handleChangeText = (text: string, index: number) => {
-    // Handle paste operation
-    if (text.length > 1) {
-      const pastedOtp = text.split("").slice(0, OTP_LENGTH);
-      const newOtp = [...otp];
-
-      pastedOtp.forEach((char, i) => {
-        if (i < OTP_LENGTH) {
-          newOtp[i] = char;
-        }
-      });
-
-      setOtp(newOtp);
-
-      // Focus the last filled input
-      const lastFilledIndex = Math.min(pastedOtp.length - 1, OTP_LENGTH - 1);
-      if (lastFilledIndex < OTP_LENGTH - 1) {
-        inputs.current[lastFilledIndex + 1]?.focus();
-      }
-      return;
-    }
-
-    // Handle single character input
-    const newOtp = [...otp];
-    newOtp[index] = text;
-    setOtp(newOtp);
-
-    // Auto focus next input if there's a value
-    if (text && index < OTP_LENGTH - 1) {
-      inputs.current[index + 1]?.focus();
-    }
-  };
-
-  const handleKeyPress = (e: any, index: number) => {
-    // Handle backspace on empty input
-    if (e.nativeEvent.key === "Backspace" && !otp[index] && index > 0) {
-      inputs.current[index - 1]?.focus();
-    }
-  };
-
-  const handleFocus = (index: number) => {
-    // Clear the field when focused (optional behavior)
-    const newOtp = [...otp];
-    newOtp[index] = "";
-    setOtp(newOtp);
-  };
+  const [showValidTicketModal, setShowValidTicketModal] = useState(false);
+  const [showInvalidTicketModal, setShowInvalidTicketModal] = useState(false);
+  const {
+    otp,
+    inputs,
+    handleChangeText,
+    handleKeyPress,
+    handleFocus,
+    OTP_LENGTH,
+  } = useOTP();
 
   const getOtpString = () => {
     return otp.join("");
@@ -66,7 +27,8 @@ const ManualTicketValidationScreen = () => {
 
   useEffect(() => {
     if (getOtpString().length === 6) {
-      Alert.alert("OTP", getOtpString());
+      Keyboard.dismiss();
+      setShowInvalidTicketModal(true);
     }
   }, [otp]);
 
@@ -111,7 +73,14 @@ const ManualTicketValidationScreen = () => {
         </View>
       </View>
       <View className="p-6 gap-4">
-        <Button>Vérifier le ticket</Button>
+        <Button
+          onPress={() => {
+            setShowValidTicketModal(true);
+            console.log("Valid");
+          }}
+        >
+          Vérifier le ticket
+        </Button>
         <Ripple
           className={
             "bg-gray-300 p-4 rounded-2xl overflow-hidden items-center justify-center mb-6"
@@ -123,6 +92,14 @@ const ManualTicketValidationScreen = () => {
           </Text>
         </Ripple>
       </View>
+      <ValidTicketModal
+        visible={showValidTicketModal}
+        onRequestClose={() => setShowValidTicketModal(false)}
+      />
+      <InvalidTicketModal
+        visible={showInvalidTicketModal}
+        onRequestClose={() => setShowInvalidTicketModal(false)}
+      />
     </View>
   );
 };
