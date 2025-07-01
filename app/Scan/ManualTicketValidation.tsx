@@ -59,7 +59,14 @@ const ManualTicketValidationScreen = () => {
                     inputs.current[index] = ref;
                   }
                 }}
-                className="border-b-4 w-8 border-primary font-cabin-bold text-xl text-primary-dark"
+                className=" font-cabin-bold text-3xl text-primary-dark w-[12vw]"
+                placeholder="---"
+                style={{
+                  marginRight: index === 2 ? 14 : 0,
+                  marginLeft: index === 3 ? 14 : 0,
+                  letterSpacing: -3,
+                }}
+                placeholderTextColor={"#2ecc71"}
                 maxLength={index === 0 ? OTP_LENGTH : 1}
                 keyboardType="number-pad"
                 value={otp[index]}

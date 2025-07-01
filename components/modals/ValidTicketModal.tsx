@@ -38,7 +38,7 @@ const ValidTicketModal = ({
         entering={FadeInDown}
       >
         <TouchableOpacity
-          className="bg-gray-100 rounded-full overflow-hidden items-center justify-center w-16 h-16 z-10"
+          className="bg-gray-100 rounded-full overflow-hidden items-center justify-center w-14 h-14 z-10"
           onPress={onRequestClose}
         >
           <CrossIcon />

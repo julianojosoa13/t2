@@ -39,7 +39,7 @@ const ScanEventModal = ({
         entering={FadeInDown}
       >
         <TouchableOpacity
-          className="bg-gray-100 rounded-full overflow-hidden items-center justify-center w-16 h-16"
+          className="bg-gray-100 rounded-full overflow-hidden items-center justify-center w-14 h-14"
           onPress={onRequestClose}
         >
           <CrossIcon />
