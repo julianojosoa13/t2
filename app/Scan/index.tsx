@@ -14,6 +14,7 @@ import ChevronRightIcon from "@/assets/icons/ChevronRightIcon";
 import UserAddIcon from "@/assets/icons/UserAddIcon";
 import TicketSmallAltIcon from "@/assets/icons/TicketSmallAltIcon";
 import ScanEventModal from "@/components/modals/ScanEventModal";
+import { router } from "expo-router";
 
 const ScansScreen = () => {
   const { width } = Dimensions.get("window");
@@ -92,6 +93,7 @@ const ScansScreen = () => {
 
         <Ripple
           className={"flex-row bg-white items-center px-4 py-8 mt-8 h-36 gap-4"}
+          onPress={() => router.navigate("/Scan/ScanInvites")}
         >
           <UserAddIcon />
           <View className="flex-1">
@@ -112,6 +114,7 @@ const ScansScreen = () => {
         </Ripple>
         <Ripple
           className={"flex-row bg-white items-center px-4 py-8 mt-4 h-36 gap-4"}
+          onPress={() => router.navigate("/Scan/ScannedEvents")}
         >
           <TicketSmallAltIcon />
           <View className="flex-1">

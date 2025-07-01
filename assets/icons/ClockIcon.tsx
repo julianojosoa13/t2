@@ -3,20 +3,22 @@ import Svg, { Path } from "react-native-svg";
 const ClockIcon = ({
   width = 20,
   height = 20,
+  color = "#828282",
 }: {
   width?: number;
   height?: number;
+  color?: string;
 }) => (
   <Svg width={width} height={height} fill="none" viewBox="0 0 18 19">
     <Path
-      stroke="#828282"
+      stroke={color}
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth="1.5"
       d="M16.5 9.5c0 4.14-3.36 7.5-7.5 7.5s-7.5-3.36-7.5-7.5S4.86 2 9 2s7.5 3.36 7.5 7.5"
     ></Path>
     <Path
-      stroke="#828282"
+      stroke={color}
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth="1.5"

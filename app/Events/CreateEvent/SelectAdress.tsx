@@ -69,7 +69,7 @@ const SelectAdress = () => {
           }}
         >
           <QuestionRoundedFillIcon width={17} height={18} />
-          <Text className="text-center m-2">Adresse non trouvé</Text>
+          <Text className="text-center m-2 font-cabin">Adresse non trouvé</Text>
         </Ripple>
       </View>
       <MapView
