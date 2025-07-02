@@ -64,7 +64,7 @@ const ManualTicketValidationScreen = () => {
                 style={{
                   marginRight: index === 2 ? 14 : 0,
                   marginLeft: index === 3 ? 14 : 0,
-                  letterSpacing: -3,
+                  letterSpacing: -30,
                 }}
                 placeholderTextColor={"#2ecc71"}
                 maxLength={index === 0 ? OTP_LENGTH : 1}

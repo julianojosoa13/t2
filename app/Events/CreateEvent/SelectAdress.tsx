@@ -69,7 +69,9 @@ const SelectAdress = () => {
           }}
         >
           <QuestionRoundedFillIcon width={17} height={18} />
-          <Text className="text-center m-2 font-cabin">Adresse non trouvé</Text>
+          <Text className="text-center m-2 font-cabin-bold">
+            Adresse non trouvé
+          </Text>
         </Ripple>
       </View>
       <MapView
@@ -111,7 +113,7 @@ const SelectAdress = () => {
 
             <Text className="font-cabin-bold mt-2">Vos adresses récentes</Text>
 
-            <Ripple className="mx-2 my-2 p-2 gap-3 flex-row items-center justify-between">
+            <Ripple className="my-2 py-2 gap-3 flex-row items-center justify-between">
               <RotateLeftIcon />
               <View className="flex-1">
                 <Text className="font-nunito-semibold">
@@ -123,7 +125,7 @@ const SelectAdress = () => {
               </View>
               <AddIcon />
             </Ripple>
-            <Ripple className="mx-2 my-2 p-2 gap-3 flex-row items-center justify-between">
+            <Ripple className="my-2 py-2 gap-3 flex-row items-center justify-between">
               <RotateLeftIcon />
               <View className="flex-1">
                 <Text className="font-nunito-semibold">

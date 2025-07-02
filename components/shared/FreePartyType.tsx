@@ -1,7 +1,6 @@
 import React, { FC } from "react";
-import { Text, View } from "react-native";
+import { Text } from "react-native";
 import Animated, { FadeInRight } from "react-native-reanimated";
-
 const FreePartyType = () => {
   return (
     <Animated.View

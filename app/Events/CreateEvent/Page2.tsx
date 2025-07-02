@@ -43,6 +43,7 @@ const Page2 = () => {
             className="font-nunito"
           />
         </View>
+        <View className="mb-2 mt-8 border-b border-[#e0e0e0]" />
         <View className="flex-row items-center justify-normal gap-2 my-4">
           <SwitchToggle
             switchOn={switchOn}

@@ -16,6 +16,7 @@ import Animated, {
   FadeIn,
   FadeInDown,
   FadeOutDown,
+  ZoomIn,
 } from "react-native-reanimated";
 import AddIcon from "@/assets/icons/AddIcon";
 import { router } from "expo-router";
@@ -29,6 +30,7 @@ import PayedEventNoTicketType from "@/components/shared/PayedEventNoTicketType";
 import IllustrationImage from "@/assets/icons/IllustrationImage";
 import SwitchToggle from "react-native-switch-toggle";
 import CreateTicketModal from "@/components/modals/CreateTicketModal";
+import AddPersonalityModal from "@/components/modals/AddPersonalityModal";
 
 export type ParticipationType = "payant" | "gratuit";
 
@@ -39,6 +41,7 @@ const Page4 = () => {
   const [showModal, setShowModal] = useState(false);
   const [switchOn, setSwitchOn] = useState(false);
   const [showCreateTicketModal, setShowCreateTicketModal] = useState(false);
+  const [showAddPersonalityModal, setShowAddPersonalityModal] = useState(false);
 
   const selectPartyType = (partyType: ParticipationType) => {
     // hideModal();
@@ -57,7 +60,7 @@ const Page4 = () => {
         <Ripple
           className="bg-white rounded-full h-10 px-5 items-center justify-center overflow-hidden"
           onPress={() => {
-            router.navigate("/Events/CreateEvent/Page5");
+            setShowAddPersonalityModal(true);
           }}
         >
           <Text>Enreg. et ontinuer</Text>
@@ -70,12 +73,12 @@ const Page4 = () => {
       <Animated.ScrollView
         entering={FadeInDown.duration(600)}
         exiting={FadeOutDown.duration(600)}
-        className="flex-1 bg-[#ededed] rounded-t-3xl mt-2 pt-4 px-6"
+        className="flex-1 bg-white rounded-t-3xl mt-2 pt-4 px-6"
         showsVerticalScrollIndicator={false}
         contentContainerClassName="flex flex-1"
       >
         {selectedPartType === "payant" ? (
-          <View>
+          <View className="flex-1">
             {showTicketType ? (
               <View>
                 <View className="flex-row items-center py-5 gap-2">
@@ -105,68 +108,71 @@ const Page4 = () => {
                 </View>
               </View>
             ) : (
-              <PayedEventNoTicketType
-                addTicketAction={() => {
-                  setShowTicketType(true);
-                }}
-              />
+              <View className="flex-1">
+                <PayedEventNoTicketType
+                  addTicketAction={() => {
+                    setShowTicketType(true);
+                  }}
+                />
+              </View>
             )}
           </View>
         ) : (
-          <View>
-            <View className="items-center my-8 gap-4">
-              <IllustrationImage />
-              <Text className="font-cabin-bold text-lg text-primary">
-                Evenenement Gratuit !
-              </Text>
-              <Text className="text-center mx-6 text-sm font-nunito-bold text-dark-secondary">
-                Vous avez configurer votre évenement sur le mode de
-                participation gratuite pour les participants. Dans ce mode nous
-                vous facturons uniquement des frais de publication de
-                l&apos;évenement qui sont payable en 1 fois.
-              </Text>
-            </View>
-            <View className="flex-row rounded-full bg-primary-100 overflow-hidden items-center justify-between mt-2 py-2 px-4">
-              <Text className="font-cabin-semibold text-dark">
-                Frais de publication & services
-              </Text>
-              <Text className="font-cabin-bold text-xl text-dark">
-                15 000F CFA
-              </Text>
-            </View>
-
-            <View className="flex-row items-center mt-4 gap-2 mx-2">
-              <SwitchToggle
-                switchOn={switchOn}
-                onPress={() => setSwitchOn(!switchOn)}
-                circleColorOff="#FFF"
-                circleColorOn="#FFF"
-                backgroundColorOn="#2ECC71"
-                backgroundColorOff="#E0E0E0"
-                circleStyle={{
-                  width: 24,
-                  height: 24,
-                  borderRadius: 12,
-                }}
-                containerStyle={{
-                  width: 55,
-                  height: 30,
-                  borderRadius: 15,
-                  padding: 4,
-                  paddingLeft: 0,
-                }}
-              />
-              <Text
-                className="font-nunito-semibold text-dark"
-                onPress={() => setSwitchOn(!switchOn)}
-              >
-                J&apos;accepte les termes & conditions
-              </Text>
+          <View className="flex-1 items-center justify-center">
+            <View style={{ transform: [{ translateY: "-15%" }] }}>
+              <View className="items-center my-8 gap-4">
+                <IllustrationImage />
+                <Text className="font-cabin-bold text-lg text-primary">
+                  Evenenement Gratuit !
+                </Text>
+                <Text className="text-center mx-6 text-sm font-nunito-bold text-dark-secondary">
+                  Vous avez configurer votre évenement sur le mode de
+                  participation gratuite pour les participants. Dans ce mode
+                  nous vous facturons uniquement des frais de publication de
+                  l&apos;évenement qui sont payable en 1 fois.
+                </Text>
+              </View>
+              <View className="flex-row rounded-full bg-primary-100 overflow-hidden items-center justify-between mt-2 py-2 px-4">
+                <Text className="font-cabin-semibold text-dark">
+                  Frais de publication & services
+                </Text>
+                <Text className="font-cabin-bold text-xl text-dark">
+                  15 000F CFA
+                </Text>
+              </View>
+              <View className="flex-row items-center mt-4 gap-2 mx-2">
+                <SwitchToggle
+                  switchOn={switchOn}
+                  onPress={() => setSwitchOn(!switchOn)}
+                  circleColorOff="#FFF"
+                  circleColorOn="#FFF"
+                  backgroundColorOn="#2ECC71"
+                  backgroundColorOff="#E0E0E0"
+                  circleStyle={{
+                    width: 24,
+                    height: 24,
+                    borderRadius: 12,
+                  }}
+                  containerStyle={{
+                    width: 55,
+                    height: 30,
+                    borderRadius: 15,
+                    padding: 4,
+                    paddingLeft: 0,
+                  }}
+                />
+                <Text
+                  className="font-nunito-semibold text-dark"
+                  onPress={() => setSwitchOn(!switchOn)}
+                >
+                  J&apos;accepte les termes & conditions
+                </Text>
+              </View>
             </View>
           </View>
         )}
-        <View className="absolute bottom-8 py-4 flex-row items-center gap-4 ml-2">
-          <View className="flex-row items-center justify-between flex-grow">
+        <View className="absolute bottom-8 py-4 flex-row items-center gap-4">
+          <View className="flex-row items-center justify-between flex-grow elevation-sm bg-white rounded-full p-2">
             <Pressable
               className="flex-row items-center gap-2"
               onPress={toggleShowModal}
@@ -201,15 +207,21 @@ const Page4 = () => {
           onPress={hideModal}
         />
         <Animated.View
-          className="absolute mx-4 bottom-24  gap-4 bg-white rounded-2xl px-4 py-2 mr-24 elevation-sm max-h-1/3"
-          entering={FadeInDown}
+          className="absolute mx-4 bottom-28  gap-4 bg-white rounded-2xl px-4 py-2 mr-24 elevation-sm max-h-[38vh]"
+          entering={FadeInDown.delay(150).duration(150)}
         >
           <TouchableOpacity
-            className="flex-row p-4 "
+            className={`flex-row p-4 rounded-2xl ${
+              selectedPartType === "gratuit" && "bg-gray-150"
+            }`}
             onPress={() => selectPartyType("gratuit")}
           >
             <View className="w-10 h-10 mt-2">
-              {selectedPartType === "gratuit" && <CheckIcon color="black" />}
+              {selectedPartType === "gratuit" && (
+                <Animated.View entering={ZoomIn}>
+                  <CheckIcon color="black" />
+                </Animated.View>
+              )}
             </View>
             <View className="">
               <Text className="text-xl font-cabin-bold">Gratuit</Text>
@@ -222,11 +234,17 @@ const Page4 = () => {
           </TouchableOpacity>
 
           <TouchableOpacity
-            className="flex-row p-2"
+            className={`flex-row p-4 rounded-2xl ${
+              selectedPartType === "payant" && "bg-[#f7f1ff]"
+            }`}
             onPress={() => selectPartyType("payant")}
           >
             <View className="w-10 h-10 mt-2">
-              {selectedPartType === "payant" && <CheckIcon color="#7C15FF" />}
+              {selectedPartType === "payant" && (
+                <Animated.View entering={ZoomIn}>
+                  <CheckIcon color="#7C15FF" />
+                </Animated.View>
+              )}
             </View>
             <View className="">
               <Text className="text-xl font-cabin-bold text-[#7C15FF]">
@@ -242,8 +260,8 @@ const Page4 = () => {
         </Animated.View>
 
         <Animated.View
-          className="absolute mx-4 bottom-10 flex-row items-center gap-4 bg-white rounded-full px-4 py-2 mr-[80px] elevation-sm"
-          entering={FadeIn}
+          className="absolute mx-4 bottom-10 flex-row items-center gap-4 bg-white rounded-full px-4 py-2 mr-[85px] elevation-sm"
+          // entering={FadeIn}
         >
           <View className="flex-row items-center justify-between flex-grow">
             <TouchableOpacity
@@ -265,6 +283,10 @@ const Page4 = () => {
       <CreateTicketModal
         visible={showCreateTicketModal}
         onRequestClose={() => setShowCreateTicketModal(false)}
+      />
+      <AddPersonalityModal
+        visible={showAddPersonalityModal}
+        onRequestClose={() => setShowAddPersonalityModal(false)}
       />
     </View>
   );

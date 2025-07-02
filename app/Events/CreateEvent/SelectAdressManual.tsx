@@ -70,7 +70,9 @@ const SelectAdressManual = () => {
           }}
         >
           <MapIcon />
-          <Text className="text-center m-2">Explorer sur la carte</Text>
+          <Text className="text-center m-2 font-cabin-bold">
+            Explorer sur la carte
+          </Text>
         </Ripple>
       </View>
       <MapView
@@ -124,7 +126,7 @@ const SelectAdressManual = () => {
 
             <Text className="font-cabin-bold mt-2">Vos adresses manuelles</Text>
 
-            <Ripple className="mx-2 my-2 p-2 gap-3 flex-row items-center justify-between">
+            <Ripple className="my-2 py-2 gap-3 flex-row items-center justify-between">
               <RotateLeftIcon />
               <View className="flex-1">
                 <Text className="font-nunito-semibold text-[13px]">
@@ -133,7 +135,7 @@ const SelectAdressManual = () => {
               </View>
               <AddIcon />
             </Ripple>
-            <Ripple className="mx-2 my-2 p-2 gap-3 flex-row items-center justify-between">
+            <Ripple className="my-2 py-2 gap-3 flex-row items-center justify-between">
               <RotateLeftIcon />
               <View className="flex-1">
                 <Text className="font-nunito-semibold text-[13px]">
