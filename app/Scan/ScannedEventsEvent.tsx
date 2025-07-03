@@ -13,6 +13,7 @@ import CheckIcon from "@/assets/icons/CheckIcon";
 import ChevronRightIcon from "@/assets/icons/ChevronRightIcon";
 import LocationTickIcon from "@/assets/icons/LocationTickIcon";
 import ClockIcon from "@/assets/icons/ClockIcon";
+import CircularProgress from "react-native-circular-progress-indicator";
 
 const ScannedEventsEvent = () => {
   return (
@@ -25,15 +26,17 @@ const ScannedEventsEvent = () => {
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{ paddingBottom: 20 }}
       >
-        <View
-          className="mt-8 bg-transparent w-[50vw] h-[50vw] items-center justify-center self-center"
-          style={{
-            borderColor: "#2ECC71",
-            borderWidth: 20,
-            borderRadius: "50%",
-          }}
-        >
-          <Text className="font-cabin-bold text-primary text-[50px]">80</Text>
+        <View className="self-center mt-8">
+          <CircularProgress
+            value={80}
+            maxValue={100}
+            radius={100}
+            activeStrokeWidth={25}
+            activeStrokeColor="#2ecc71"
+            inActiveStrokeColor="transparent"
+            clockwise={false}
+            circleBackgroundColor="transparent"
+          />
         </View>
         <Text className="text-primary text-lg font-cabin text-center mb-8 mt-4">
           2 000 / 3 000 Tickets scannés

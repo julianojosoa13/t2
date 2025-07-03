@@ -7,13 +7,14 @@ import GaleryImageIcon from "@/assets/icons/GaleryImageIcon";
 import AddIcon from "@/assets/icons/AddIcon";
 import PictureFrameIcon from "@/assets/icons/PictureFrameIcon";
 import { router } from "expo-router";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 const Page3 = () => {
   return (
     <View className="bg-primary flex-1">
       <Header title="Festival du Lust" backTo="" />
 
-      <View className="absolute top-10 right-4">
+      <SafeAreaView className="absolute top-7 right-4">
         <Ripple
           className="bg-white rounded-full h-10 px-5 items-center justify-center overflow-hidden"
           onPress={() => {
@@ -22,7 +23,7 @@ const Page3 = () => {
         >
           <Text>Enreg. et ontinuer</Text>
         </Ripple>
-      </View>
+      </SafeAreaView>
       <Text className="mx-4 font-cabin-bold text-3xl">
         Gallerie d&apos;image
       </Text>

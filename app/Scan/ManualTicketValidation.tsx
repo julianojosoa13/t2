@@ -34,9 +34,8 @@ const ManualTicketValidationScreen = () => {
 
   return (
     <View className="flex-1 bg-[#edfaff] h-full w-full justify-between">
-      <View className="my-1">
-        <Header title="Scan & Vérification - Code de vérification"></Header>
-      </View>
+      <Header title="Scan & Vérification - Code de vérification"></Header>
+
       <View className="p-6 gap-6">
         <View className="self-center">
           <ManualScanImage />

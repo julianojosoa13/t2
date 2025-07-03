@@ -10,14 +10,15 @@ import Animated, {
 import { router } from "expo-router";
 import SwitchToggle from "react-native-switch-toggle";
 import ChevronRightIcon from "@/assets/icons/ChevronRightIcon";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 const Page2 = () => {
   const [switchOn, setSwitchOn] = useState(false);
   return (
     <View className="bg-primary flex-1">
-      <Header title="Festival du Lust" backTo="" />
+      <Header title="Festival du Lust" backTo="" withSafeArea />
 
-      <View className="absolute top-10 right-4">
+      <SafeAreaView className="absolute top-7 right-4">
         <Ripple
           className={
             "bg-white rounded-full h-10 px-5 items-center justify-center overflow-hidden"
@@ -26,7 +27,7 @@ const Page2 = () => {
         >
           <Text>Enreg. et ontinuer</Text>
         </Ripple>
-      </View>
+      </SafeAreaView>
       <Animated.ScrollView
         entering={FadeInDown.duration(600)}
         exiting={FadeOutDown.duration(600)}

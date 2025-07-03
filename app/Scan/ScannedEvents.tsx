@@ -6,6 +6,7 @@ import { Header } from "@/components/shared/Header";
 import LocationTickIcon from "@/assets/icons/LocationTickIcon";
 import { router } from "expo-router";
 import ClockIcon from "@/assets/icons/ClockIcon";
+import CircularProgress from "react-native-circular-progress-indicator";
 import CheckIcon from "@/assets/icons/CheckIcon";
 
 const ScannedEvents = () => {
@@ -115,16 +116,16 @@ const ScannedEvents = () => {
               </Text>
             </View>
           </View>
-          <View
-            className="bg-transparent w-8 h-8 items-center justify-center"
-            style={{
-              borderColor: "#2ECC71",
-              borderWidth: 2,
-              borderRadius: "50%",
-            }}
-          >
-            <Text className="font-nunito-bold text-primary text-sm">80</Text>
-          </View>
+          <CircularProgress
+            value={80}
+            maxValue={100}
+            radius={15}
+            activeStrokeWidth={5}
+            activeStrokeColor="#2ecc71"
+            inActiveStrokeColor="#eee"
+            clockwise={false}
+            circleBackgroundColor="#eee"
+          />
         </TouchableOpacity>
       </ScrollView>
     </View>

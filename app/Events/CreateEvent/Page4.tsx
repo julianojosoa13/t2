@@ -33,6 +33,7 @@ import IllustrationImage from "@/assets/icons/IllustrationImage";
 import SwitchToggle from "react-native-switch-toggle";
 import CreateTicketModal from "@/components/modals/CreateTicketModal";
 import AddPersonalityModal from "@/components/modals/AddPersonalityModal";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export type ParticipationType = "payant" | "gratuit";
 
@@ -58,7 +59,7 @@ const Page4 = () => {
     <View className="bg-primary flex-1">
       <Header title="Festival du Lust" backTo="" />
 
-      <View className="absolute top-10 right-4">
+      <SafeAreaView className="absolute top-7 right-4">
         <Ripple
           className="bg-white rounded-full h-10 px-5 items-center justify-center overflow-hidden"
           onPress={() => {
@@ -67,7 +68,7 @@ const Page4 = () => {
         >
           <Text>Enreg. et ontinuer</Text>
         </Ripple>
-      </View>
+      </SafeAreaView>
       <Text className="mx-4 font-cabin-bold text-3xl">Tickets</Text>
       <Text className="mx-4 font-nunito text-sm mb-2">
         Ajouter les différents tickets pour l&apos;évenement

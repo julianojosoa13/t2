@@ -9,8 +9,8 @@ interface IHeader {
 }
 export function Header({ title, backTo, withSafeArea = true }: IHeader) {
   const data = (
-    <View className="flex-row items-center gap-x-4">
-      <View className=" flex-row  p-2">
+    <SafeAreaView className="flex-row items-center gap-x-4">
+      <View className=" flex-row  px-2">
         <BackButton to={backTo} />
       </View>
       <View>
@@ -18,7 +18,7 @@ export function Header({ title, backTo, withSafeArea = true }: IHeader) {
           {title}
         </Text>
       </View>
-    </View>
+    </SafeAreaView>
   );
   if (!withSafeArea) {
     return data;

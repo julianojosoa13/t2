@@ -16,6 +16,7 @@ import CheckIcon from "@/assets/icons/CheckIcon";
 import CloseIcon from "@/assets/icons/CloseIcon";
 import AddIcon from "@/assets/icons/AddIcon";
 import CreateGuestModal from "@/components/modals/CreateGuestModal";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 const Page5 = () => {
   const [ShowModal, setShowModal] = useState(false);
@@ -26,7 +27,7 @@ const Page5 = () => {
     <View className="bg-primary flex-1">
       <Header title="Festival du Lust" backTo="" />
 
-      <View className="absolute top-10 right-4">
+      <SafeAreaView className="absolute top-7 right-4">
         <Ripple
           className="bg-white rounded-full h-10 px-5 items-center justify-center overflow-hidden"
           onPress={() => {
@@ -36,7 +37,7 @@ const Page5 = () => {
         >
           <Text>Enreg. et ontinuer</Text>
         </Ripple>
-      </View>
+      </SafeAreaView>
       <Text className="mx-4 font-cabin-bold text-3xl">Invité</Text>
       <Text className="mx-4 font-nunito text-sm mb-2">
         Ajouter les invités à votre évenement

@@ -28,7 +28,6 @@ const ScansScreen = () => {
       showsVerticalScrollIndicator={false}
       contentContainerStyle={{ paddingBottom: 20 }}
     >
-      <View className="my-1" />
       <Header title="Scan & Vérification"></Header>
       <View className="self-center flex-row my-6 mx-6">
         <View className="flex-1 items-center bg-[#D0F0FD] rounded-l-full py-8">

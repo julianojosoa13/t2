@@ -13,6 +13,7 @@ import { useCallback, useEffect, useRef } from "react";
 import RotateLeftIcon from "@/assets/icons/RotateLeftIcon";
 import AddIcon from "@/assets/icons/AddIcon";
 import { Button } from "@/components/shared/Button";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 const KeyboardListener = ({ onKeyboardShow }: any) => {
   useEffect(() => {
@@ -53,7 +54,7 @@ const SelectAdress = () => {
 
   return (
     <KeyboardAvoidingScrollView contentContainerClassName="flex-1 justify-between">
-      <View className="realtive top-14 px-4 z-10 flex-row items-center justify-between w-full">
+      <SafeAreaView className="realtive top-10 px-4 z-10 flex-row items-center justify-between w-full">
         <Ripple
           className="w-12 h-12 rounded-full bg-white/30 shadow-xl items-center justify-center overflow-hidden"
           onPress={() => router.back()}
@@ -73,7 +74,7 @@ const SelectAdress = () => {
             Adresse non trouvé
           </Text>
         </Ripple>
-      </View>
+      </SafeAreaView>
       <MapView
         style={StyleSheet.absoluteFillObject}
         customMapStyle={customMapStyle}
