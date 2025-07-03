@@ -27,6 +27,7 @@
     "expo-application": "~6.1.4",
     "expo-blur": "~14.1.5",
     "expo-calendar": "~14.1.4",
+    "expo-camera": "~16.1.9",
     "expo-constants": "~17.1.6",
     "expo-device": "~7.1.4",
     "expo-font": "~13.3.1",
@@ -49,6 +50,7 @@
     "react-dom": "19.0.0",
     "react-i18next": "^15.5.1",
     "react-native": "0.79.4",
+    "react-native-circular-progress-indicator": "^4.4.2",
     "react-native-gesture-handler": "~2.24.0",
     "react-native-image-viewing": "^0.2.2",
     "react-native-keyboard-avoiding-scroll-view": "^1.0.1",
@@ -70,8 +72,7 @@
     "react-native-webview": "13.13.5",
     "react-redux": "^9.2.0",
     "tailwindcss": "^3.4.17",
-    "zeego": "^3.0.6",
-    "expo-camera": "~16.1.9"
+    "zeego": "^3.0.6"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
