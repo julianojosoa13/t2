@@ -34,7 +34,7 @@ const AddPersonalityModal = ({
           className="w-[94vw] h-[15vh]"
           resizeMode="cover"
         />
-        <Text className="text-2xl font-cabin-bold text-dark text-center my-4 mx-2">
+        <Text className="text-2xl font-cabin-bold text-dark text-center mb-4 mt-8 mx-2">
           Vos personnalités qui seront là !
         </Text>
         <Text className="font-nunito text-dark-secondary text-center mx-4 mb-6 mt-2">
@@ -52,8 +52,15 @@ const AddPersonalityModal = ({
               router.navigate("/Events/CreateEvent/Page5");
             }}
           >
-            <UserAddIcon color={"#292d32"} />
-            <Text className="font-nunito-bold text-lg text-dark"> Ajouter</Text>
+            {/* <UserAddIcon color={"#292d32"} /> */}
+            <Image
+              source={require("@/assets/images/user-add.png")}
+              className="w-8 h-8 -my-2 -mr-2"
+            />
+            <Text className="font-nunito-semibold text-lg text-dark">
+              {" "}
+              Ajouter
+            </Text>
           </Ripple>
 
           <Ripple
@@ -65,8 +72,7 @@ const AddPersonalityModal = ({
               router.navigate("/Events/CreateEvent/Page6");
             }}
           >
-            <Text className="font-nunito-bold text-lg text-dark">
-              {" "}
+            <Text className="font-nunito-semibold text-lg text-dark">
               Continuer
             </Text>
             <ChevronRightIcon color={"#292d32"} />

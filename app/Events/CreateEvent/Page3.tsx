@@ -23,7 +23,7 @@ const Page3 = () => {
           <Text>Enreg. et ontinuer</Text>
         </Ripple>
       </View>
-      <Text className="mx-4 font-cabin-bold text-2xl">
+      <Text className="mx-4 font-cabin-bold text-3xl">
         Gallerie d&apos;image
       </Text>
       <Text className="mx-4 font-nunito text-sm mb-2">

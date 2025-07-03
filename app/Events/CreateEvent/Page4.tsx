@@ -15,7 +15,9 @@ import Ripple from "react-native-material-ripple";
 import Animated, {
   FadeIn,
   FadeInDown,
+  FadeInLeft,
   FadeOutDown,
+  FadeOutRight,
   ZoomIn,
 } from "react-native-reanimated";
 import AddIcon from "@/assets/icons/AddIcon";
@@ -66,9 +68,9 @@ const Page4 = () => {
           <Text>Enreg. et ontinuer</Text>
         </Ripple>
       </View>
-      <Text className="mx-4 font-cabin-bold text-2xl">Tickets</Text>
+      <Text className="mx-4 font-cabin-bold text-3xl">Tickets</Text>
       <Text className="mx-4 font-nunito text-sm mb-2">
-        Ajouter les différents tickets pour l’évenement
+        Ajouter les différents tickets pour l&apos;évenement
       </Text>
       <Animated.ScrollView
         entering={FadeInDown.duration(600)}
@@ -78,7 +80,11 @@ const Page4 = () => {
         contentContainerClassName="flex flex-1"
       >
         {selectedPartType === "payant" ? (
-          <View className="flex-1">
+          <Animated.View
+            className="flex-1"
+            entering={FadeInLeft.duration(600).delay(100)}
+            exiting={FadeOutRight}
+          >
             {showTicketType ? (
               <View>
                 <View className="flex-row items-center py-5 gap-2">
@@ -116,9 +122,13 @@ const Page4 = () => {
                 />
               </View>
             )}
-          </View>
+          </Animated.View>
         ) : (
-          <View className="flex-1 items-center justify-center">
+          <Animated.View
+            entering={FadeInLeft.duration(600).delay(100)}
+            exiting={FadeOutRight}
+            className="flex-1 items-center justify-center"
+          >
             <View style={{ transform: [{ translateY: "-15%" }] }}>
               <View className="items-center my-8 gap-4">
                 <IllustrationImage />
@@ -169,9 +179,13 @@ const Page4 = () => {
                 </Text>
               </View>
             </View>
-          </View>
+          </Animated.View>
         )}
-        <View className="absolute bottom-8 py-4 flex-row items-center gap-4">
+        <Animated.View
+          entering={FadeInLeft.duration(600).delay(100)}
+          exiting={FadeOutRight}
+          className="absolute bottom-8 py-4 flex-row items-center gap-4"
+        >
           <View className="flex-row items-center justify-between flex-grow elevation-sm bg-white rounded-full p-2">
             <Pressable
               className="flex-row items-center gap-2"
@@ -195,7 +209,7 @@ const Page4 = () => {
           >
             <AddIcon color="black" />
           </TouchableOpacity>
-        </View>
+        </Animated.View>
       </Animated.ScrollView>
 
       <Modal transparent visible={showModal} onRequestClose={hideModal}>

@@ -55,7 +55,7 @@ const SelectAdress = () => {
     <KeyboardAvoidingScrollView contentContainerClassName="flex-1 justify-between">
       <View className="realtive top-14 px-4 z-10 flex-row items-center justify-between w-full">
         <Ripple
-          className="w-12 h-12 rounded-full bg-[rgba(255,255,255,0.825)] shadow-xl items-center justify-center overflow-hidden"
+          className="w-12 h-12 rounded-full bg-white/30 shadow-xl items-center justify-center overflow-hidden"
           onPress={() => router.back()}
         >
           <ChevronLeftIcon width={20} height={20} />
