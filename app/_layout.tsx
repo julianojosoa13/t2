@@ -47,6 +47,7 @@ function App() {
         <Stack screenOptions={{ headerShown: false }}>
           <Stack.Screen name="index" />
         </Stack>
+        <Toast />
       </GestureHandlerRootView>
     );
 }
