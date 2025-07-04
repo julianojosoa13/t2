@@ -14,11 +14,24 @@ import LocationTickIcon from "@/assets/icons/LocationTickIcon";
 import CheckIcon from "@/assets/icons/CheckIcon";
 import StarIcon from "@/assets/icons/StarIcon";
 import ChevronRightIcon from "@/assets/icons/ChevronRightIcon";
+import DateTimePickerModal from "@/components/modals/DateTimePickerModal";
+import { useState } from "react";
+import { DateType } from "react-native-ui-datepicker";
+import { formatDateComponents, FormattedDate } from "@/helpers/DateHelpers";
 
 const bgColor = "#EFEFEF";
 const fgColor = "#828282";
 
 const Page1 = () => {
+  const [showEndDatePicker, setShowEndDatePicker] = useState(false);
+  const [showStartDatePicker, setShowStartDatePicker] = useState(false);
+
+  const [startDate, setStartDate] = useState<DateType>(Date.now());
+  const [endDate, setEndDate] = useState<DateType>(Date.now());
+
+  const formattedStartDate: FormattedDate = formatDateComponents(startDate);
+  const formattedEndDate: FormattedDate = formatDateComponents(endDate);
+
   return (
     <SafeAreaView className="bg-primary flex-1">
       <Header title="" backTo="" />
@@ -55,6 +68,7 @@ const Page1 = () => {
         <View className="flex-row items-center justify-between gap-5">
           <Ripple
             className={`bg-[${bgColor}] flex-1 rounded-2xl p-2 overflow-hidden`}
+            onPress={() => setShowStartDatePicker(true)}
           >
             <View className="flex-row items-center gap-2">
               <CalendarEditIcon />
@@ -65,16 +79,16 @@ const Page1 = () => {
 
             <View className="flex-row items-center gap-4 mb-2">
               <Text className={`text-[40px] text-[${fgColor}] font-cabin-bold`}>
-                01
+                {formattedStartDate.day}
               </Text>
               <View>
                 <Text className={`text-[${fgColor}] font-cabin text-[16px]`}>
-                  Déc
+                  {formattedStartDate.monthString}
                 </Text>
                 <Text
                   className={`text-[${fgColor}] text-[16px] font-cabin-semibold`}
                 >
-                  2025
+                  {formattedStartDate.year}
                 </Text>
               </View>
             </View>
@@ -83,7 +97,7 @@ const Page1 = () => {
               <View className="flex-row items-center gap-2">
                 <ClockIcon />
                 <Text className={`text-[${fgColor}] font-cabin-semibold`}>
-                  22h
+                  {formattedStartDate.hour}h{formattedStartDate.min}
                 </Text>
               </View>
 
@@ -93,6 +107,7 @@ const Page1 = () => {
 
           <Ripple
             className={`bg-[${bgColor}] flex-1 rounded-2xl p-2 overflow-hidden`}
+            onPress={() => setShowEndDatePicker(true)}
           >
             <View className="flex-row items-center gap-2">
               <CalendarEditIcon />
@@ -103,16 +118,16 @@ const Page1 = () => {
 
             <View className="flex-row items-center gap-4 mb-2">
               <Text className={`text-[40px] text-[${fgColor}] font-cabin-bold`}>
-                01
+                {formattedEndDate.day}
               </Text>
               <View>
                 <Text className={`text-[${fgColor}] font-cabin text-[16px]`}>
-                  Déc
+                  {formattedEndDate.monthString}
                 </Text>
                 <Text
                   className={`text-[${fgColor}] text-[16px] font-cabin-semibold`}
                 >
-                  2025
+                  {formattedEndDate.year}
                 </Text>
               </View>
             </View>
@@ -121,7 +136,7 @@ const Page1 = () => {
               <View className="flex-row items-center gap-2">
                 <ClockIcon />
                 <Text className={`text-[${fgColor}] font-cabin-semibold`}>
-                  22h
+                  {formattedEndDate.hour}h{formattedEndDate.min}
                 </Text>
               </View>
 
@@ -190,6 +205,20 @@ const Page1 = () => {
           <ChevronRightIcon strokeWidth={2} color="#303338" />
         </Ripple>
       </Animated.ScrollView>
+
+      <DateTimePickerModal
+        visible={showStartDatePicker}
+        onClose={() => setShowStartDatePicker(false)}
+        onConfirm={(res) => setStartDate(res.date)}
+        value={startDate}
+      />
+
+      <DateTimePickerModal
+        visible={showEndDatePicker}
+        onClose={() => setShowEndDatePicker(false)}
+        onConfirm={(res) => setEndDate(res.date)}
+        value={endDate}
+      />
     </SafeAreaView>
   );
 };

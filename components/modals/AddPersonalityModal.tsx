@@ -1,6 +1,10 @@
 import { Image, Modal, Pressable, StyleSheet, Text, View } from "react-native";
 import React from "react";
-import Animated, { FadeInDown, ZoomIn } from "react-native-reanimated";
+import Animated, {
+  FadeInDown,
+  ZoomIn,
+  ZoomInDown,
+} from "react-native-reanimated";
 import Ripple from "react-native-material-ripple";
 import UserAddIcon from "@/assets/icons/UserAddIcon";
 import ChevronRightIcon from "@/assets/icons/ChevronRightIcon";
@@ -18,16 +22,16 @@ const AddPersonalityModal = ({
       <Pressable
         style={{
           ...StyleSheet.absoluteFillObject,
-          backgroundColor: "rgba(5,5,5,0.35)",
+          backgroundColor: "rgba(255,255,255,0.75)",
         }}
         onPress={onRequestClose}
       />
       <Animated.View
         className={
-          "absolute top-1/4 bg-white elevation-sm rounded-t-[40] mx-4 overflow-hidden"
+          "absolute bottom-1 bg-white elevation-sm rounded-t-[40] mx-4 overflow-hidden"
         }
         // style={{ transform: [{ translateY: "-50%" }] }}
-        entering={ZoomIn.delay(50)}
+        entering={FadeInDown.delay(50)}
       >
         <Image
           source={require("@/assets/images/personality.png")}
@@ -45,7 +49,7 @@ const AddPersonalityModal = ({
         <View className="my-4 flex-row items-center justify-around">
           <Ripple
             className={
-              "flex-row items-center gap-2 justify-center py-4 px-8 overflow-hidden  rounded-xl bg-primary"
+              "flex-row items-center gap-2 justify-center py-3 px-8 overflow-hidden  rounded-xl bg-primary"
             }
             onPress={() => {
               onRequestClose && onRequestClose();
@@ -65,7 +69,7 @@ const AddPersonalityModal = ({
 
           <Ripple
             className={
-              "flex-row items-center gap-2 justify-center py-4 px-8 overflow-hidden rounded-xl bg-[#e0e0e0]"
+              "flex-row items-center gap-2 justify-center py-3 px-8 overflow-hidden rounded-xl bg-[#e0e0e0]"
             }
             onPress={() => {
               onRequestClose && onRequestClose();
